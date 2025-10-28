@@ -16,7 +16,6 @@ Colors
 /* Body */
 body {
     font: 300;
-
 }
 
 
@@ -94,6 +93,10 @@ h1 {
   margin-left: 10px;
 }
 
+#page-title {
+  padding: 10px 0;
+}
+
 /* Footer */
 footer {
   background-color: #eee;
@@ -125,4 +128,30 @@ footer {
 
 .social a:hover {
   background-color: #ddd;
+}
+
+
+/* Containers */
+.container {
+  display: block;
+  column-gap: 15px;
+  padding: 10px 0;
+}
+
+
+/* Debugging */
+.red-border {
+  border:red solid 1px;
+}
+
+.blue-border {
+  border:blue solid 1px;
+}
+
+.gray-bg {
+  background-color: #ddd;
+}
+
+.green-bg {
+  background-color: aquamarine;
 }
