@@ -7,66 +7,6 @@ Colors
 #F5E5E1 - Highlight 2
 
 **/
-.zilla-slab-light {
-  font-family: "Zilla Slab", serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.zilla-slab-regular {
-  font-family: "Zilla Slab", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.zilla-slab-medium {
-  font-family: "Zilla Slab", serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.zilla-slab-semibold {
-  font-family: "Zilla Slab", serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.zilla-slab-bold {
-  font-family: "Zilla Slab", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.zilla-slab-light-italic {
-  font-family: "Zilla Slab", serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.zilla-slab-regular-italic {
-  font-family: "Zilla Slab", serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.zilla-slab-medium-italic {
-  font-family: "Zilla Slab", serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.zilla-slab-semibold-italic {
-  font-family: "Zilla Slab", serif;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.zilla-slab-bold-italic {
-  font-family: "Zilla Slab", serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
 
 * {
     margin: 0 0;
@@ -83,10 +23,10 @@ body {
 /* Header */
 header {
     display: grid;
-    grid-template-columns: 24px auto 44px;
+    grid-template-columns: 40px auto 44px;
     padding: 5px 0 5px 10px;
     align-items: end;
-    border-bottom: solid 1px #F5E5E1;
+    border-bottom: solid 1px #ddd;
     column-gap: 10px;
 }
 
@@ -106,10 +46,83 @@ header span {
 .hamburger {
     background: none;
     border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
 
-.hamburger::after {
+.hamburger::before {
     content: "\2630";
     font-size: 2rem;
+}
+
+.hamburger.show::before {
+  content:"\00D7"
+}
+
+/* Navigation */
+.navigation {
+  display: none;
+}
+
+.navigation.show {
+  display: block;
+}
+
+.navigation ul {
+  list-style-type: none;
+  margin:0;
+  padding: 0;
+}
+
+.navigation a {
+  display: block;
+  padding: .8rem 10px;
+  color: #427A76;
+  text-decoration: none;
+  border-bottom: solid 1px #ddd;
+}
+
+.navigation li.current {
+  background-color: #F5E5E1;
+}
+
+.navigation a:hover {
+  background-color: rgb(104, 170, 28);
+}
+
+h1 {
+  margin-left: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #eee;
+  padding: 1rem 10px;
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+
+}
+
+.social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: #ccc solid 1px;
+  border-radius: 10px;
+  width: 44px;
+  height: 44px;
+}
+
+.social img {
+  width: 22px;
+  height: 22px;
+}
+
+.social a:hover {
+  background-color: #ddd;
 }
