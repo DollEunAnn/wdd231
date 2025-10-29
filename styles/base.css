@@ -15,7 +15,9 @@ Colors
 
 /* Body */
 body {
-    font: 300;
+  font-family: "Zilla Slab", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 
@@ -130,6 +132,9 @@ footer {
   background-color: #ddd;
 }
 
+#timeDetails {
+  padding: 10px 0;
+}
 
 /* Containers */
 .container {
