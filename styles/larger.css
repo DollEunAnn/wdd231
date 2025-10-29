@@ -46,5 +46,17 @@
     /* Make the third section full width below */
     main > section:nth-of-type(3) {
     flex: 1 1 100%;
-    }    
+    }
+    
+    /* Flex for subject */
+    #subject {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .pill {
+        flex-grow:1;
+    }
 }
