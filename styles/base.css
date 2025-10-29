@@ -97,6 +97,7 @@ h1 {
 
 #page-title {
   padding: 10px 0;
+  margin-top: .5rem;
 }
 
 /* Footer */
@@ -110,22 +111,22 @@ footer {
   display: flex;
   justify-content: center;
   column-gap: 8px;
-
+  margin: 1rem;
 }
 
 .social a {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: #ccc solid 1px;
+  /* border: #ccc solid 1px; */
   border-radius: 10px;
-  width: 44px;
-  height: 44px;
+  width: 88px;
+  height: 88px;
 }
 
 .social img {
-  width: 22px;
-  height: 22px;
+  width: 55px;
+  height: 55px;
 }
 
 .social a:hover {
@@ -136,11 +137,64 @@ footer {
   padding: 10px 0;
 }
 
-/* Containers */
-.container {
+/* Section */
+section {
   display: block;
   column-gap: 15px;
-  padding: 10px 0;
+  margin:10px 10px;
+}
+
+section h2 {
+  background-color: #F5E5E1;
+  padding: 10px;
+  text-align: center;
+  border: #ddd solid 1px;
+  color:#427A76;
+}
+
+section p {
+  padding:10px;
+}
+
+section img {
+  width: 15em;
+  height: 15em;
+}
+
+.photo-box {
+  display: flex;
+  padding: 1.25em;
+  justify-content: center;
+}
+
+#student-profile,
+#student-photo {
+  background-color: #ddd;
+}
+#courses {
+  display: grid;
+  grid-template-columns: auto auto auto; 
+}
+
+.pill {
+  border: #174143 2px solid;
+  background-color: #F5E5E1;
+  margin: 8px;
+  padding: .5em;
+  text-align: center;
+  border-radius: 10px;
+  font-weight:bold;
+}
+
+.strip {
+  background-color: #F5E5E1;
+  padding: .5em;
+  margin: 8px 0;
+  border: #174143 1px solid;
+}
+
+#credits {
+  text-align: center;
 }
 
 
