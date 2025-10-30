@@ -1,12 +1,11 @@
-/**
-Colors
+:root {
+  --primary: #DD8256;
+  --secondary: #C3C8CC; /* contrast */
+  --primary-lighter: #FBEEE8;
+  --text-color:#575757;
+  --background:#F2F2F2;
 
-#F9B487 - Primary
-#427A76 - Secondary
-#174143 - Highlight 1
-#F5E5E1 - Highlight 2
-
-**/
+}
 
 * {
     margin: 0 0;
@@ -38,8 +37,7 @@ header img {
 }
 
 header span {
-    font-size: 1.2rem;
-    color: #174143;
+    font-size: 2rem;
 }
 
 
@@ -78,17 +76,19 @@ header span {
 .navigation a {
   display: block;
   padding: .8rem 10px;
-  color: #427A76;
+  color: var(--text-color);
   text-decoration: none;
   border-bottom: solid 1px #ddd;
 }
 
 .navigation li.current {
-  background-color: #F5E5E1;
+  background-color: var(--primary-lighter);
+  color:var(--primary-lighter);
 }
 
 .navigation a:hover {
-  background-color: rgb(104, 170, 28);
+  background-color: var(--primary);
+  color: var(--primary-lighter);
 }
 
 h1 {
@@ -145,11 +145,10 @@ section {
 }
 
 section h2 {
-  background-color: #F5E5E1;
+  background-color: var(--primary);
   padding: 10px;
   text-align: center;
   border: #ddd solid 1px;
-  color:#427A76;
 }
 
 section p {
@@ -169,7 +168,7 @@ section img {
 
 #student-profile,
 #student-photo {
-  background-color: #ddd;
+  background-color: var(--background) ;
 }
 #courses {
   display: grid;
@@ -191,6 +190,7 @@ section img {
   padding: .5em;
   margin: 8px 0;
   border: #174143 1px solid;
+  text-align: center;
 }
 
 #credits {

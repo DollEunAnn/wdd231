@@ -59,4 +59,8 @@
     .pill {
         flex-grow:1;
     }
+
+    .strip {
+        flex: auto;
+    }
 }

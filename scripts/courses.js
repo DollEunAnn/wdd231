@@ -94,7 +94,7 @@ function displayCourses(filter) {
 
   // display each course
   subjectDiv.innerHTML = filteredCourses
-    .map(course => `<div class="strip">${course.subject} ${course.number} - ${course.title}</div>`)
+    .map(course => `<div class="strip">${course.subject} ${course.number}</div>`)
     .join('');
 
   // calculate total credits
@@ -108,7 +108,7 @@ btnAll.addEventListener('click', () => displayCourses('All'));
 btnCSE.addEventListener('click', () => displayCourses('CSE'));
 btnWDD.addEventListener('click', () => displayCourses('WDD'));
 
-// optional: show all on load
+// show all on load
 displayCourses('All');
 
 
