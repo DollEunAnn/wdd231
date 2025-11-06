@@ -1,0 +1,67 @@
+{
+  "members": [
+    {
+      "name": "Antonette's Inasal",
+      "addresses": "Sampaloc Tanay Rizal",
+      "phone_numbers": "0912628331",
+      "website": "https://www.magi.com",
+      "imageUrl": "images/inasal.jpg",
+      "membership_level": 1,
+      "products": "grilled chicken and pasta"
+    },
+    {
+      "name": "Ricardo's Cacao",
+      "addresses": "Sampaloc Tanay Rizal",
+      "phone_numbers": "0912628331",
+      "website": "magi.com",
+      "imageUrl": "images/ricardo.jpg",
+      "membership_level": 3,
+      "products": "cacao drink and beans"
+    },
+    {
+      "name": "Yune Stickers",
+      "addresses": "Sampaloc Tanay Rizal",
+      "phone_numbers": "0912628331",
+      "website": "magi.com",
+      "imageUrl": "images/yune.jpg",
+      "membership_level": 3,
+      "products": "custom stickers"
+    },
+    {
+      "name": "Ezek and Mai Siomai",
+      "addresses": "Sampaloc Tanay Rizal",
+      "phone_numbers": "0912628331",
+      "website": "magi.com",
+      "imageUrl": "images/ezekmai.jpg",
+      "membership_level": 2,
+      "products": "somai/dumplings"
+    },
+    {
+      "name": "JeRai Pet Supplies",
+      "addresses": "Sampaloc Tanay Rizal",
+      "phone_numbers": "0912628331",
+      "website": "magi.com",
+      "imageUrl": "images/jerai.jpg",
+      "membership_level": 3,
+      "products": "pet food and supplies"
+    },
+    {
+      "name": "Thumm Carvings",
+      "addresses": "Sampaloc Tanay Rizal",
+      "phone_numbers": "0912628331",
+      "website": "magi.com",
+      "imageUrl": "images/thumm.jpg",
+      "membership_level": 1,
+      "products": "wood carvings"
+    },
+    {
+      "name": "LeJoy Soap",
+      "addresses": "Sampaloc Tanay Rizal",
+      "phone_numbers": "0912628331",
+      "website": "magi.com",
+      "imageUrl": "images/lejoy.jpg",
+      "membership_level": 1,
+      "products": "refill soap"
+    }
+  ]
+}

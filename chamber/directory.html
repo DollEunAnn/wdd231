@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 231 - Web Frontend Development - Eunice Ann Dollete</title>
+    <meta name="author" content="Eunice Ann Dollete" />
+    <meta name="description" content="WDD 231 - Web Frontend Development - Eunice Ann Dollete" />
+
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="WDD 231 - Course Home Page">
+    <meta property="og:description"
+        content="Explore web design and development projects, resources, and updates from the WDD 231 course.">
+    <meta property="og:image" content="https://example.com/images/course-thumbnail.jpg">
+    <meta property="og:url" content="https://dolleunann.github.io/wdd231">
+
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Style Sheets-->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <script defer src="scripts/navigation.js"></script>
+    <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/members.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/cat-solid-full.svg" alt="Site Logo">
+        <span>Tanay Chamber of Commerce</span>
+        <button id="ham-btn" aria-label="Hamburger Menu" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+    <main class="grid">
+        <div id="cards" class="grid"></div>
+    </main>
+
+    <footer>
+        <p>Tanay Chamber of Commerce</p>
+        <p>Brgy. Sampaloc, Tanay Rizal</p>
+        <p>info@tcc.org</p>
+        <p>+63 912 0489 0111</p>
+        <div class="social">
+            <a href="https://www.facebook.com/ead0717" target="_blank">
+                <img src="images/facebook.svg" alt="Facebook Profile" width="16" height="16">
+            </a>
+            <a href="https://github.com/DollEunAnn" target="_blank">
+                <img src="images/github.svg" alt="Github Profile" width="16" height="16">
+            </a>
+            <a href="https://ph.linkedin.com/in/eahdollete" target="_blank">
+                <img src="images/linkedin.svg" alt="LinkedIn Profile" width="16" height="16">
+            </a>
+        </div>
+        <div id="timeDetails">
+            <p>WDD231 Class Project</p>
+            <p>© <span id="currentyear"></span> Eunice Ann Dollete - Philippines</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>

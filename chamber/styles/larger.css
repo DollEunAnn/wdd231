@@ -1,0 +1,66 @@
+@media only screen and (min-width: 38rem) {
+    header, main, nav, footer {
+        min-width: 100%;
+        margin:0 auto;
+    }
+
+    header {
+        grid-template-columns: 40px auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        border-bottom: solid 1px #ddd;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    /* main */
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    #student-profile {
+        flex: 1;
+    }
+
+    /* Keep title full width */
+    main > h1 {
+    flex: 1 1 100%;
+    margin-bottom: 0.5rem;
+    }
+
+    /* Make the third section full width below */
+    main > section:nth-of-type(3) {
+    flex: 1 1 100%;
+    }
+    
+    /* Flex for subject */
+    #subject {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .pill {
+        flex-grow:1;
+    }
+
+    .strip {
+        flex: auto;
+    }
+}
