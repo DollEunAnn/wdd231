@@ -79,16 +79,16 @@ header span {
   color: var(--text-color);
   text-decoration: none;
   border-bottom: solid 1px #ddd;
+  font-size: medium;
+  font-weight: 700;
 }
 
-.navigation li.current {
+/* .navigation li.current {
   background-color: var(--primary-lighter);
-  color:var(--primary-lighter);
-}
+} */
 
 .navigation a:hover {
   background-color: var(--primary);
-  color: var(--primary-lighter);
 }
 
 h1 {
@@ -125,8 +125,8 @@ footer {
 .social {
   display: flex;
   justify-content: center;
-  column-gap: 2rem;
-  margin: 1rem;
+  column-gap: 2.5rem;
+  margin: 1.5rem;
 }
 
 .social a {

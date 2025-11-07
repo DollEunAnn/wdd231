@@ -7,7 +7,10 @@
     }
 
     header {
-        grid-template-columns: 40px auto;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        grid-template-columns: 40px auto 500px;
+        align-items: center;
     }
 
     .hamburger {
@@ -16,15 +19,25 @@
 
     .navigation {
         display: block;
-        border-bottom: solid 1px #ddd;
     }
 
     .navigation ul {
         display: flex;
+        align-items: end;
     }
 
     .navigation a {
         border: none;
+    }
+
+    #nav-bar {
+        display: none;
+    }
+
+    .navigation a:hover {
+        background-color: none;
+        border-bottom: 1px solid green;
+        color:#fff;
     }
 
     /* main */
@@ -33,6 +46,7 @@
         flex-wrap: wrap;
         flex-direction: row;
         gap: 1rem;
+        padding: 3.45rem;
     }
 
     #student-profile {
