@@ -1,5 +1,5 @@
 :root {
-  --primary: #DD8256;
+  --primary: #3B568C;
   --secondary: #C3C8CC; /* contrast */
   --primary-lighter: #FBEEE8;
   --text-color:#575757;
@@ -8,7 +8,7 @@
 }
 
 * {
-    margin: 0 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -18,7 +18,6 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-
 
 /* Header */
 header {
@@ -110,47 +109,16 @@ main {
 	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
-/* Card */
-section {
-	margin: 0.5rem;
-	padding: 1rem;
-	background-color: var(--primary-lighter);
-	border: 1px solid rgb(0 0 0 / 10%);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-section > p {
-	/* min-height: 60px; */
-	font-size: smaller;
-	text-align: center;
-    margin: 0;
-
-}
-
-section img {
-	width: auto;
-	max-width: 325px;
-	/* box-shadow: 0 0 30px #777; */
-	height: 200px;
-	/* border: 1px solid #111; */
-  margin-top: 0.5rem;
-}
-
-
-
-
-
-
-
-
-
 
 /* Footer */
 footer {
-  background-color: #eee;
+  background-color: var(--background);
   padding: 1rem 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: normal;
 }
 
 .social {
@@ -163,8 +131,7 @@ footer {
 .social a {
   display: flex;
   justify-content: center;
-  align-items: center;
-  /* border: #ccc solid 1px; */
+  align-items: baseline;
   border-radius: 10px;
   width: 88px;
   height: 88px;
@@ -184,7 +151,14 @@ footer {
 }
 
 
+/* Classes */
+.font-bold {
+  font-weight: 700;
+}
 
+.padding-10 {
+  padding: 0.5rem 10rem;
+}
 
 /* Debugging */
 .red-border {

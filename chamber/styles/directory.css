@@ -1,0 +1,36 @@
+/* Adjustments for cards */
+
+/* Card */
+section {
+  background-color: var(--primary-lighter);
+	margin: 0.5rem;
+	padding: 1rem;
+	border: 2px solid rgb(0 0 0 / 10%);
+  border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+section > p {
+	/* min-height: 60px; */
+	font-size: smaller;
+	text-align: center;
+  margin: 0;
+}
+
+section h2 {
+  font-weight: bold;
+  color: #3B568C;
+  margin: 0.5rem 0;
+}
+
+section img {
+    width: auto;
+    max-width: 325px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    height: 200px;
+    border: 1px solid #111;
+    border-radius: 0.7rem;
+    margin-top: 0.5rem;
+}

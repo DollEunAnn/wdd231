@@ -13,8 +13,8 @@
       "name": "Ricardo's Cacao",
       "addresses": "Sampaloc Tanay Rizal",
       "phone_numbers": "0912628331",
-      "website": "magi.com",
-      "imageUrl": "images/ricardo.jpg",
+      "website": "https://www.cacaoricardo.com",
+      "imageUrl": "images/inasal.jpg",
       "membership_level": 3,
       "products": "cacao drink and beans"
     },
@@ -22,8 +22,8 @@
       "name": "Yune Stickers",
       "addresses": "Sampaloc Tanay Rizal",
       "phone_numbers": "0912628331",
-      "website": "magi.com",
-      "imageUrl": "images/yune.jpg",
+      "website": "https://www.yunestickers.me",
+      "imageUrl": "images/inasal.jpg",
       "membership_level": 3,
       "products": "custom stickers"
     },
@@ -31,8 +31,8 @@
       "name": "Ezek and Mai Siomai",
       "addresses": "Sampaloc Tanay Rizal",
       "phone_numbers": "0912628331",
-      "website": "magi.com",
-      "imageUrl": "images/ezekmai.jpg",
+      "website": "https://www.yunestickers.me",
+      "imageUrl": "images/inasal.jpg",
       "membership_level": 2,
       "products": "somai/dumplings"
     },
@@ -40,8 +40,8 @@
       "name": "JeRai Pet Supplies",
       "addresses": "Sampaloc Tanay Rizal",
       "phone_numbers": "0912628331",
-      "website": "magi.com",
-      "imageUrl": "images/jerai.jpg",
+      "website": "https://www.yunestickers.me",
+      "imageUrl": "images/inasal.jpg",
       "membership_level": 3,
       "products": "pet food and supplies"
     },
@@ -49,8 +49,8 @@
       "name": "Thumm Carvings",
       "addresses": "Sampaloc Tanay Rizal",
       "phone_numbers": "0912628331",
-      "website": "magi.com",
-      "imageUrl": "images/thumm.jpg",
+      "website": "https://www.yunestickers.me",
+      "imageUrl": "images/inasal.jpg",
       "membership_level": 1,
       "products": "wood carvings"
     },
@@ -58,8 +58,8 @@
       "name": "LeJoy Soap",
       "addresses": "Sampaloc Tanay Rizal",
       "phone_numbers": "0912628331",
-      "website": "magi.com",
-      "imageUrl": "images/lejoy.jpg",
+      "website": "https://www.yunestickers.me",
+      "imageUrl": "images/inasal.jpg",
       "membership_level": 1,
       "products": "refill soap"
     }
