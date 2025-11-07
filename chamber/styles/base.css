@@ -1,5 +1,5 @@
 :root {
-  --primary: #3B568C;
+  --primary: #7ce197;
   --secondary: #C3C8CC; /* contrast */
   --primary-lighter: #FBEEE8;
   --text-color:#575757;
@@ -14,7 +14,7 @@
 
 /* Body */
 body {
-  font-family: "Zilla Slab", serif;
+  font-family: "Inter", serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -23,10 +23,11 @@ body {
 header {
     display: grid;
     grid-template-columns: 40px auto 44px;
-    padding: 5px 0 5px 10px;
+    padding: 5px 5px 10px;
     align-items: end;
     border-bottom: solid 1px #ddd;
     column-gap: 10px;
+    background-color: var(--primary);
 }
 
 header img {
@@ -112,10 +113,10 @@ main {
 
 /* Footer */
 footer {
-  background-color: var(--background);
-  padding: 1rem 10px;
+  background-color: var(--primary);
+  padding: 1rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: normal;
@@ -124,32 +125,30 @@ footer {
 .social {
   display: flex;
   justify-content: center;
-  column-gap: 8px;
+  column-gap: 2rem;
   margin: 1rem;
 }
 
 .social a {
   display: flex;
   justify-content: center;
-  align-items: baseline;
-  border-radius: 10px;
-  width: 88px;
-  height: 88px;
+  align-items: center; /* center vertically */
+  border-radius: 100px;
+  width: 45x;
+  height: 50px;
 }
 
 .social img {
-  width: 55px;
-  height: 55px;
+  width: 50px;
+  height: 50px;
 }
+
 
 .social a:hover {
-  background-color: #ddd;
+  background-color: #fff;
+  border-radius: 50%;
+  
 }
-
-#timeDetails {
-  padding: 10px 0;
-}
-
 
 /* Classes */
 .font-bold {

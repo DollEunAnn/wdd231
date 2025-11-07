@@ -44,6 +44,7 @@ const displayMembers = (members) => {
 
     //build link
     website.href = `${member.website}`;
+    website.target = '_blank';
 
 
     cards.appendChild(card);
