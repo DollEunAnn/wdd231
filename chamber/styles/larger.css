@@ -43,6 +43,10 @@
         flex: 1;
     }
 
+    main {
+        min-height: 82vh;
+    }
+
     /* Keep title full width */
     main > h1 {
     flex: 1 1 100%;

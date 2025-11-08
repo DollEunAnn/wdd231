@@ -51,3 +51,21 @@ const displayMembers = (members) => {
     
   });
 }
+
+// Toggle between grid and list view
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+
+gridbutton.addEventListener("click", () => {
+  cards.classList.add("grid");
+  cards.classList.remove("list");
+  gridbutton.classList.add("active");
+  listbutton.classList.remove("active");
+});
+
+listbutton.addEventListener("click", () => {
+  cards.classList.add("list");
+  cards.classList.remove("grid");
+  listbutton.classList.add("active");
+  gridbutton.classList.remove("active");
+});

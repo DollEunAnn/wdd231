@@ -2,7 +2,6 @@
 
 /* Card */
 section {
-  background-color: var(--primary-lighter);
 	margin: 0.5rem;
 	padding: 1rem;
 	border: 2px solid rgb(0 0 0 / 10%);
@@ -20,8 +19,9 @@ section > p {
 }
 
 section h2 {
+  font-size: medium;
   font-weight: bold;
-  color: #3B568C;
+  color: #262626;
   margin: 0.5rem 0;
 }
 
@@ -33,4 +33,76 @@ section img {
     border: 1px solid #111;
     border-radius: 0.7rem;
     margin-top: 0.5rem;
+}
+
+section a {
+  color: #0E4920;
+}
+
+
+/* Card List */
+/* === List View === */
+.list {
+	display: flex;
+	flex-direction: column;
+
+	section {
+		display: grid;
+		grid-template-columns:1fr 1fr 1fr 1fr;
+		margin: 0;
+		padding: 0.25rem;
+    border-radius: 0;
+    border:0;
+
+		& > * {
+			margin: 0 1rem;
+		}
+
+		img {
+			display: none;
+		}
+
+		h2 {
+			font-size: 1rem;
+      font-weight: 300;
+		}
+
+		&:nth-child(even) {
+			background-color: #9EEBB2;
+		}
+	}
+}
+
+
+/* Menu button */
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.menu button {
+  border: 1px solid #0E4920;
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: background-color 0.3s;
+}
+
+.menu button.active,
+.menu button:hover {
+  background-color: #0E4920;
+}
+
+.menu button img {
+  width: 24px;
+  height: 24px;
+  filter: invert(20%) sepia(85%) saturate(300%) hue-rotate(180deg);
+}
+
+.menu button.active img,
+.menu button:hover img {
+  filter: brightness(0) invert(1);
 }
