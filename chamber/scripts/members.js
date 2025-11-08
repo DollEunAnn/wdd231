@@ -38,7 +38,6 @@ const displayMembers = (members) => {
 
     // build image attribute
     portrait.setAttribute('alt', `Business Image of ${member.name}`);
-    portrait.setAttribute('loading', 'lazy');
     portrait.setAttribute('width', '440');
     portrait.setAttribute('height', '440');
 
