@@ -1,6 +1,6 @@
 :root {
   --primary: #7ce197;
-  --secondary: #C3C8CC; /* contrast */
+  --secondary: #0E4920; /* contrast */
   --primary-lighter: #FBEEE8;
   --text-color:#262626;
   --background:#F2F2F2;
@@ -25,7 +25,7 @@ header {
     grid-template-columns: 40px auto 44px;
     padding: 5px 5px 10px;
     align-items: end;
-    border-bottom: solid 1px #ddd;
+    border-bottom: solid 1px var(--primary-lighter);
     column-gap: 10px;
     background-color: var(--primary);
 }
@@ -78,13 +78,13 @@ header span {
   padding: .8rem 10px;
   color: var(--text-color);
   text-decoration: none;
-  border-bottom: solid 1px #ddd;
+  border-bottom: solid 1px var(--primary-lighter);
   font-size: medium;
   font-weight: 700;
 }
 
 .navigation li.current {
-  border-bottom: #262626 1px solid;
+  border-bottom: var(--text-color) 1px solid;
 }
 
 .navigation a:hover {
@@ -151,7 +151,7 @@ footer {
 
 
 .social a:hover {
-  background-color: #fff;
+  background-color: var(--background);
   border-radius: 50%;
   
 }
@@ -165,32 +165,14 @@ footer {
   padding: 0.5rem 10rem;
 }
 
-/* Debugging */
-.red-border {
-  border:red solid 1px;
-}
 
-.blue-border {
-  border:blue solid 1px;
-}
-
-.gray-bg {
-  background-color: #ddd;
-}
-
-.green-bg {
-  background-color: aquamarine;
-}
-
-
-/* directory */
-/* Adjustments for cards */
+/* Directory */
 
 /* Card */
 section {
 	margin: 0.5rem;
 	padding: 1rem;
-	border: 2px solid rgb(0 0 0 / 10%);
+	border: 0.5px solid var(--secondary);
   border-radius: 15px;
 	display: flex;
 	flex-direction: column;
@@ -207,7 +189,7 @@ section > p {
 section h2 {
   font-size: medium;
   font-weight: bold;
-  color: #262626;
+  color: var(--text-color);
   margin: 0.5rem 0;
 }
 
@@ -216,48 +198,47 @@ section img {
     max-width: 325px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     height: 200px;
-    border: 1px solid #111;
+    border: 1px solid var(--text-color);
     border-radius: 0.7rem;
     margin-top: 0.5rem;
 }
 
 section a {
-  color: #0E4920;
+  color: var(--secondary);
 }
 
 
 /* Card List */
-/* === List View === */
-.list {
-	display: flex;
-	flex-direction: column;
-
-	section {
-		display: grid;
-		grid-template-columns:1fr 1fr 1fr 1fr;
-		margin: 0;
-		padding: 0.25rem;
-    border-radius: 0;
-    border:0;
-
-		& > * {
-			margin: 0 1rem;
-		}
-
-		img {
-			display: none;
-		}
-
-		h2 {
-			font-size: 1rem;
-      font-weight: 300;
-		}
-
-		&:nth-child(even) {
-			background-color: #9EEBB2;
-		}
-	}
+.list section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0;
+  padding: 0.25rem;
+  border-radius: 0;
+  border: 0;
 }
+
+/* Child elements inside each section */
+.list section > * {
+  margin: 0 1rem;
+}
+
+/* Hide images in list view */
+.list section img {
+  display: none;
+}
+
+/* Style text */
+.list section h2 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/* Zebra striping */
+.list section:nth-child(even) {
+  background-color: #9EEBB2;
+}
+
 
 
 /* Menu button */
@@ -269,8 +250,8 @@ section a {
 }
 
 .menu button {
-  border: 1px solid #0E4920;
-  background-color: #fff;
+  border: 1px solid var(--secondary);
+  background-color: var(--background);
   border-radius: 5px;
   cursor: pointer;
   padding: 0.5rem;
@@ -279,7 +260,7 @@ section a {
 
 .menu button.active,
 .menu button:hover {
-  background-color: #0E4920;
+  background-color: var(--secondary);
 }
 
 .menu button img {
