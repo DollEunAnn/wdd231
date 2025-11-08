@@ -196,7 +196,6 @@ section h2 {
 section img {
     width: auto;
     max-width: 325px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     height: 200px;
     border: 1px solid var(--text-color);
     border-radius: 0.7rem;
@@ -236,7 +235,7 @@ section a {
 
 /* Zebra striping */
 .list section:nth-child(even) {
-  background-color: #9EEBB2;
+  background-color: var(--primary);
 }
 
 
@@ -266,7 +265,6 @@ section a {
 .menu button img {
   width: 24px;
   height: 24px;
-  filter: invert(20%) sepia(85%) saturate(300%) hue-rotate(180deg);
 }
 
 .menu button.active img,

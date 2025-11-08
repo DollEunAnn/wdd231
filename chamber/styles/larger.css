@@ -35,8 +35,8 @@
     }
 
     .navigation a:hover {
-        border-bottom: 1px solid green;
-        color:#fff;
+        border-bottom: 1px solid var(--primary);
+        color:var(--background);
     }
 
     #student-profile {
