@@ -40,6 +40,7 @@ const displayMembers = (members) => {
     portrait.setAttribute('alt', `Business Image of ${member.name}`);
     portrait.setAttribute('width', '440');
     portrait.setAttribute('height', '440');
+    portrait.setAttribute('lazy', 'loading');
 
     //build link
     website.href = `${member.website}`;
