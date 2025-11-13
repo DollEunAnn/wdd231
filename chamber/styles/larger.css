@@ -49,13 +49,14 @@
 
     /* Keep title full width */
     main > h1 {
-    flex: 1 1 100%;
-    margin-bottom: 0.5rem;
+        text-align: left;
+        flex: 1 1 100%;
+        margin-bottom: 0.5rem;
     }
 
     /* Make the third section full width below */
     main > section:nth-of-type(3) {
-    flex: 1 1 100%;
+        flex: 1 1 100%;
     }
     
     /* Flex for subject */
@@ -80,7 +81,7 @@
         padding-right: 5rem;
         min-height: 7rem ;
         min-width: 100%;
-        margin:0 auto;
+        margin-top: 1.5rem;
         flex-direction: row;
     }
 

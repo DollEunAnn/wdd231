@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tanay Chamber of Commerce - Directory Page</title>
+    <meta name="author" content="Eunice Ann Dollete" />
+    <meta name="description" content="Directory page of the businesses in the City of Tanay." />
+
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="Tanay Chamber of Commerce - Directory Page">
+    <meta property="og:description" content="Directory page of the businesses in the City of Tanay.">
+    <meta property="og:image" content="https://dolleunann.github.io/wdd231/chamber/images/chamber-preview.jpg">
+    <meta property="og:url" content="https://dolleunann.github.io/wdd231">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Style Sheets-->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/landing-page.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Scripts -->
+    <script defer src="scripts/navigation.js"></script>
+    <script defer src="scripts/getdates.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/compass.svg" alt="Site Logo">
+        <span>Tanay Chamber of Commerce</span>
+        <button id="ham-btn" aria-label="Hamburger Menu" class="hamburger"></button>
+        <div class="navigation">
+            <ul>
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Business Directory</a></li>
+                <li><a href="#">Join</a></li>
+            </ul>
+        </div>
+
+    </header>
+    <!-- small screen -->
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Business Directory</a></li>
+            <li><a href="#">Join</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="hero">
+            <img src="images/chamber-preview.jpg" alt="rafting">
+            <a href="#" target="_blank">Keynote Tickets</a>
+        </div>
+        <h1>Home</h1>
+        <div class="grid">
+            <div class="panel">
+                <p class="panel-title">Events</p>
+                <div class="panel-content">
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="panel">
+                <p class="panel-title">Current Weather</p>
+                <div class="panel-content">
+                    <p id="current-temp">75F</p>
+                    <p id="desc">Party Cloudy</p>
+                    <p>High: <span id="high">85</span></p>
+                    <p>Low: <span id="low">52</span></p>
+                    <p>Sunrise: <span id="sunrise">52</span></p>
+                    <p>Sunset: <span id="sunset">52</span></p>
+                </div>
+            </div>
+            <div class="panel">
+                <p class="panel-title">Weather Forecast</p>
+                <div class="panel-content">
+                    <p>Today: <span id="high">85</span></p>
+                    <!-- loop the next two days in JS -->
+                    <p>Wednesday: <span id="next-day">85</span></p>
+                    <p>Thursday: <span id="next-two-days">85</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="business-card">
+                <div class="business-header">
+                    <p>Business Name</p>
+                    <p>Business Tag Line</p>
+                </div>
+                <div class="business-content">
+                    <img src="images/profile.jpg" alt="">
+                    <div class="info">
+                        <p>Email: info@gmail.com</p>
+                        <p>Phone: 800-555-1234</p>
+                        <p>URL: mybusiness.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="business-card">
+                <div class="business-header">
+                    <p>Business Name</p>
+                    <p>Business Tag Line</p>
+                </div>
+                <div class="business-content">
+                    <img src="images/profile.jpg" alt="">
+                    <div class="info">
+                        <p>Email: info@gmail.com</p>
+                        <p>Phone: 800-555-1234</p>
+                        <p>URL: mybusiness.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="business-card">
+                <div class="business-header">
+                    <p>Business Name</p>
+                    <p>Business Tag Line</p>
+                </div>
+                <div class="business-content">
+                    <img src="images/profile.jpg" alt="">
+                    <div class="info">
+                        <p>Email: info@gmail.com</p>
+                        <p>Phone: 800-555-1234</p>
+                        <p>URL: mybusiness.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <p class="font-bold">Tanay Chamber of Commerce</p>
+            <p>Brgy. Sampaloc, Tanay Rizal</p>
+            <p>info@tcc.org</p>
+            <p>+63 912 0489 0111</p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/ead0717" target="_blank">
+                <img src="images/facebook.svg" alt="Facebook Profile" width="16" height="16">
+            </a>
+            <a href="https://github.com/DollEunAnn" target="_blank">
+                <img src="images/github.svg" alt="Github Profile" width="16" height="16">
+            </a>
+            <a href="https://ph.linkedin.com/in/eahdollete" target="_blank">
+                <img src="images/linkedin.svg" alt="LinkedIn Profile" width="16" height="16">
+            </a>
+        </div>
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>Eunice Ann Dollete</p>
+            <p>© <span id="currentyear"></span> Tanay Chamber of Commerce</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>
