@@ -29,6 +29,7 @@
     <!-- Scripts -->
     <script defer src="scripts/navigation.js"></script>
     <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/weather.js"></script>
 </head>
 
 <body>
@@ -77,12 +78,15 @@
             <div class="panel">
                 <p class="panel-title">Current Weather</p>
                 <div class="panel-content">
-                    <p id="current-temp">75F</p>
-                    <p id="desc">Party Cloudy</p>
-                    <p>High: <span id="high">85</span></p>
-                    <p>Low: <span id="low">52</span></p>
-                    <p>Sunrise: <span id="sunrise">52</span></p>
-                    <p>Sunset: <span id="sunset">52</span></p>
+                    <img id="weather-icon" src="" alt="">
+                    <div>
+                        <p id="current-temp"></p>
+                        <p id="desc"></p>
+                        <p>High: <span id="high"></span></p>
+                        <p>Low: <span id="low"></span></p>
+                        <p>Sunrise: <span id="sunrise"></span></p>
+                        <p>Sunset: <span id="sunset"></span></p>
+                    </div>
                 </div>
             </div>
             <div class="panel">
