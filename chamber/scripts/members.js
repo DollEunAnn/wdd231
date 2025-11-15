@@ -1,6 +1,6 @@
 const cards = document.querySelector('#cards');
 
-//step 4
+// directory
 async function getMemberData() {
     const response = await fetch('data/members.json');
 
@@ -10,6 +10,19 @@ async function getMemberData() {
 }
 
 getMemberData();
+
+// landing
+async function getMemberPremiumData() {
+  const response = await fetch('data/members.json');
+
+  const data = await response.json();
+
+  // filter members with membership_level = 3
+  const premiumMembers = data.members.filter(member => member.membership_level === 3);
+
+  displayMembersLanding(premiumMembers);
+
+}
 
 
 const displayMembers = (members) => {
@@ -51,6 +64,23 @@ const displayMembers = (members) => {
     
   });
 }
+
+
+  // <div class="business-card">
+  //     <div class="business-header">
+  //         <p>Business Name</p>
+  //         <p>Business Tag Line</p>
+  //     </div>
+  //     <div class="business-content">
+  //         <img src="images/profile.jpg" alt="">
+  //         <div class="info">
+  //             <p>Email: info@gmail.com</p>
+  //             <p>Phone: 800-555-1234</p>
+  //             <p>URL: mybusiness.com</p>
+  //         </div>
+  //     </div>
+  // </div>
+
 
 // Toggle between grid and list view
 const gridbutton = document.querySelector("#grid");

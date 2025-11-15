@@ -29,12 +29,19 @@
     background-color: var(--primary);
     text-align: center;
     padding: .5rem 0;
-    margin-bottom: 1rem;
+    /* margin-bottom: rem; */
     font-weight: 700;
 }
 
 .panel-content {
+    text-transform: capitalize;
+    display: flex;
+    gap: 1rem;
     padding: 1rem;
+}
+
+.panel-content > img {
+    width: 5rem;
 }
 
 .business-card {
@@ -72,4 +79,13 @@
 
 .business-content p {
   margin: 0.25rem 0;
+}
+
+#current-temp , #today-temp, #next-day-temp, #next-two-days-temp{
+    font-weight: 700;
+}
+
+#forecast {
+    display: flex;
+    flex-direction: column;
 }
