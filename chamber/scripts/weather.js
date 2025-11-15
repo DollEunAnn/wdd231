@@ -1,11 +1,11 @@
 // weather
+const weatherIconContainer = document.querySelector('#currentIcon');
 const currentTemp = document.querySelector('#current-temp');
 const captionDesc = document.querySelector('#desc');
 const high = document.querySelector('#high');
 const low = document.querySelector('#low');
 const sunrise = document.querySelector('#sunrise');
 const sunset = document.querySelector('#sunset');
-const weatherIcon = document.querySelector('#weather-icon');
 const humidity = document.querySelector('#humid');
 
 // forecast
@@ -51,6 +51,9 @@ function displayCurrentWeather(weatherData) {
     currentTemp.innerHTML = `${weatherData.main.temp}&deg;C`;
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
 
+    const weatherIcon = document.createElement('img');
+    weatherIcon.id = "weatherIcon";
+
     let desc = weatherData.weather[0].description;
 
     high.innerHTML = `${weatherData.main.temp_max}&deg;C`;
@@ -61,7 +64,9 @@ function displayCurrentWeather(weatherData) {
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = `${desc}`;
-
+    
+    weatherIconContainer.append(weatherIcon);
+    
 }
 
 function formatTime(unixTime) {

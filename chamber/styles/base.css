@@ -266,3 +266,96 @@ section a {
 .menu button:hover img {
   filter: brightness(0) invert(1);
 }
+
+/* landing page */
+.hero {
+    position: relative;
+    max-height: 20vh;
+}
+
+.hero > a {
+    background-color: var(--background);
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    position: absolute;
+    top:3rem;
+    right: 2rem;
+}
+
+.hero > img {
+    display: block;
+    width: 100%;
+    height: 10vh;
+    object-fit: cover;
+}
+
+.panel {
+    background-color: var(--background);
+    min-height: 20vh;
+    margin:0.5rem 0;
+}
+
+.panel-title {
+    background-color: var(--primary);
+    text-align: center;
+    padding: .5rem 0;
+    /* margin-bottom: rem; */
+    font-weight: 700;
+}
+
+.panel-content {
+    text-transform: capitalize;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.panel-content > img {
+    width: 5rem;
+}
+
+.business-card {
+    border-radius: 10px;
+    background-color: var(--background);
+    margin-top: 10px;
+}
+
+.business-header {
+    text-align: center;
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--text-color);
+}
+
+.business-header > p:first-of-type {
+    font-size: x-large;
+}
+
+.business-header > p:last-of-type {
+    color: var(--secondary);
+}
+
+.business-content {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.3rem;
+}
+
+.business-content img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin:0.5rem;
+}
+
+.business-content p {
+  margin: 0.25rem 0;
+}
+
+#current-temp , #today-temp, #next-day-temp, #next-two-days-temp{
+    font-weight: 700;
+}
+
+#forecast {
+    display: flex;
+    flex-direction: column;
+}

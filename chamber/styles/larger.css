@@ -90,4 +90,29 @@
         justify-content: center;
         margin:0;
     }
+
+    /* Adjustments for the landing page */
+    .grid {
+        grid-gap: 0.5rem;
+    }
+
+    #events-section {
+        grid-column: span 2;
+    }
+
+    .hero {
+        position: relative;
+        max-height: 50rem;
+    }
+
+    .hero > img {
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .hero > a {
+        top:27.5rem;
+        right: 2rem;
+    }
+
 }

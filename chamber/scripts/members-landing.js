@@ -21,7 +21,7 @@ const displayMembersLanding = (members) => {
   }
 
   // Take first 3
-  const selectedMembers = members.slice(0, 2);
+  const selectedMembers = members.slice(0, 3);
 
   selectedMembers.forEach(member => {
     const businessCard = document.createElement('div');
