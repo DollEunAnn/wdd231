@@ -96,3 +96,19 @@ function displayForecast(forecastData) {
     nextDayTemp.textContent = `${forecastData.list[8].main.feels_like}°C`;
     nextTwoDaysTemp.textContent = `${forecastData.list[16].main.feels_like}°C`;
 }
+
+
+ // <div class="business-card">
+  //     <div class="business-header">
+  //         <p>Business Name</p>
+  //         <p>Business Tag Line</p>
+  //     </div>
+  //     <div class="business-content">
+  //         <img src="images/profile.jpg" alt="">
+  //         <div class="info">
+  //             <p>Email: info@gmail.com</p>
+  //             <p>Phone: 800-555-1234</p>
+  //             <p>URL: mybusiness.com</p>
+  //         </div>
+  //     </div>
+  // </div>
