@@ -47,7 +47,7 @@ form {
     padding: 0;
 }
 
-#dialogBox .modal-header {
+#dialogBox .header {
     display: grid;
     grid-template-columns: auto 44px;
     gap: 1rem;
