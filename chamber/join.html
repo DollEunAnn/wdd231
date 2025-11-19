@@ -59,7 +59,7 @@
 
     <main>
         <h1>Join Form</h1>
-        <div class="square" id="form-container">
+        <div class="grid" id="form-container">
             <form method="GET" action="thankyou.html" class="designOne">
                 <!-- first name -->
                 <label>First Name <input type="text" name="first" required autocomplete="given-name"
@@ -68,32 +68,32 @@
                 <label>Last Name <input type="text" name="last" required autocomplete="family-name"
                         title="Your Last Name"></label>
                 <!-- org title -->
-                <label>Organization Title <input type="text" name="orgtitle" autocomplete="organization-title"
-                        title="Your Organization Title"></label>
-                <!-- email -->
-                <label>Email <input type="email" name="email" required placeholder="john89@gmail.com" title="Your Email"
-                        autocomplete="email"></label>
-                <!-- mobile -->
-                <label>Mobile Phone Number <input type="tel" name="phone" autocomplete="tel"
-                        title="A Phone Number with dashes" required placeholder="987-555-1234"></label>
-                <!-- business name -->
-                <label>Business/Organization's Name <input type="text" name="organization" autocomplete="organization"
-                        required title="Your Business Name"></label>
-                <!-- membership -->
-                <label>Select Membership Level</label>
-                <label><input type="radio" name="membership-level" value="NP" checked> Non-Profit</label>
-                <label><input type="radio" name="membership-level" value="Bronze"> Bronze</label>
-                <label><input type="radio" name="membership-level" value="Silver"> Silver</label>
-                <label><input type="radio" name="membership-level" value="Gold"> Gold</label>
-                <!-- business description -->
-                <label for="description">Business Description:</label>
-                <textarea id="description" name="business_description" title="Describe your business or organization"
-                    rows="5"></textarea>
+                <label>Title <input type="text" name="orgtitle" autocomplete="organization-title"
+                        title="Your Organization Title" pattern="^[A-Za-z0-9\s\.,&'-]{2,100}$">
+                    <!-- email -->
+                    <label>Email <input type="email" name="email" required placeholder="john89@gmail.com"
+                            title="Your Email" autocomplete="email"></label>
+                    <!-- mobile -->
+                    <label>Mobile Phone Number <input type="tel" name="phone" autocomplete="tel"
+                            title="A Phone Number with dashes" required placeholder="987-555-1234"></label>
+                    <!-- business name -->
+                    <label>Business/Organization's Name <input type="text" name="organization"
+                            autocomplete="organization" required title="Your Business Name"></label>
+                    <!-- membership -->
+                    <label>Select Membership Level</label>
+                    <label><input type="radio" name="membership-level" value="NP" checked> Non-Profit</label>
+                    <label><input type="radio" name="membership-level" value="Bronze"> Bronze</label>
+                    <label><input type="radio" name="membership-level" value="Silver"> Silver</label>
+                    <label><input type="radio" name="membership-level" value="Gold"> Gold</label>
+                    <!-- business description -->
+                    <label for="description">Business Description:</label>
+                    <textarea id="description" name="business_description"
+                        title="Describe your business or organization" rows="5"></textarea>
 
-                <input type="hidden" id="timestamp" name="timestamp">
+                    <input type="hidden" id="timestamp" name="timestamp">
 
 
-                <input type="submit" value="Register">
+                    <input type="submit" value="Register">
             </form>
         </div>
 
