@@ -1,7 +1,7 @@
 const dialogBox = document.querySelector('#dialogBox');
 const closeButton = document.querySelector('#closeButton');
-const dialogBoxText = document.querySelector('#dialogBox .content');
-const title = document.querySelector('#dialogBox #title');
+const dialogBoxText = document.querySelector('#dialogBox .dialogContent');
+const title = document.querySelector('#dialogBox .dialogTitleheader');
 
 npButton.addEventListener("click", () => {
     dialogBox.showModal();
