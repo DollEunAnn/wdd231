@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tanay Chamber of Commerce - Directory Page</title>
+    <meta name="author" content="Eunice Ann Dollete" />
+    <meta name="description" content="Directory page of the businesses in the City of Tanay." />
+
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="Tanay Chamber of Commerce - Directory Page">
+    <meta property="og:description" content="Directory page of the businesses in the City of Tanay.">
+    <meta property="og:image" content="https://dolleunann.github.io/wdd231/chamber/images/chamber-preview.jpg">
+    <meta property="og:url" content="https://dolleunann.github.io/wdd231">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Style Sheets-->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <!-- <link rel="stylesheet" href="styles/landing-page.css"> -->
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Scripts -->
+    <script defer src="scripts/navigation.js"></script>
+    <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/membership.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/compass.svg" alt="Site Logo">
+        <span>Tanay Chamber of Commerce</span>
+        <button id="ham-btn" aria-label="Hamburger Menu" class="hamburger"></button>
+        <div class="navigation">
+            <ul>
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Business Directory</a></li>
+                <li><a href="#">Join</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- small screen -->
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Business Directory</a></li>
+            <li><a href="#">Join</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Join Form</h1>
+
+        <div class="grid" id="form-container">
+            <form method="GET" action="thanks.html" class="designOne">
+                <!-- first name -->
+                <label>First Name <input type="text" name="first" required autocomplete="first-name"
+                        title="Your First Name"></label>
+                <!-- last name -->
+                <label>Last Name <input type="text" name="last" required autocomplete="last-name"
+                        title="Your Last Name"></label>
+                <!-- org title -->
+                <label>Organization Title <input type="text" name="orgtitle" autocomplete="organization-title"
+                        title="Your Organization Title"></label>
+                <!-- email -->
+                <label>Email <input type="email" name="email" required placeholder="john89@gmail.com" title="Your Email"
+                        autocomplete="email"></label>
+                <!-- mobile -->
+                <label>Mobile Phone Number <input type="tel" name="phone" autocomplete="tel"
+                        title="A Phone Number with dashes" required placeholder="987-555-1234"></label>
+                <!-- business name -->
+                <label>Business/Organization's Name <input type="text" name="organization" autocomplete="organization"
+                        required title="Your Business Name"></label>
+                <!-- membership -->
+                <label>Select Membership Level</label>
+                <label><input type="radio" name="membership-level" value="NP" checked> Non-Profit</label>
+                <label><input type="radio" name="membership-level" value="Bronze"> Bronze</label>
+                <label><input type="radio" name="membership-level" value="Silver"> Silver</label>
+                <label><input type="radio" name="membership-level" value="Gold"> Gold</label>
+                <!-- business description -->
+                <label for="description">Business Description:</label>
+                <textarea id="description" name="business_description" title="Describe your business or organization"
+                    rows="5"></textarea>
+
+
+                <input type="submit" value="Register">
+            </form>
+        </div>
+
+        <div class="grid" id="membership-detail">
+            <p>Membership Levels</p>
+            <div>
+                <p>Non-Profile Membership Level</p>
+                <button id="npButton">Learn More</button>
+            </div>
+            <div>
+                <p>Bronze Membership Level</p>
+                <button id="bronzeButton">Learn More</button>
+            </div>
+            <div>
+                <p>Silver Membership Level</p>
+                <button id="silverButton">Learn More</button>
+            </div>
+            <div>
+                <p>Gold Membership Level</p>
+                <button id="goldButton">Learn More</button>
+            </div>
+        </div>
+        <!-- modal dialog -->
+        <dialog id="dialogBox">
+            <div class="modal-header">
+                <p id="modal-title"></p>
+                <button id="closeButton">X</button>
+            </div>
+            <div id="content"></div>
+        </dialog>
+    </main>
+
+    <footer>
+        <div>
+            <p class="font-bold">Tanay Chamber of Commerce</p>
+            <p>Brgy. Sampaloc, Tanay Rizal</p>
+            <p>info@tcc.org</p>
+            <p>+63 912 0489 0111</p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/ead0717" target="_blank">
+                <img src="images/facebook.svg" alt="Facebook Profile" width="16" height="16">
+            </a>
+            <a href="https://github.com/DollEunAnn" target="_blank">
+                <img src="images/github.svg" alt="Github Profile" width="16" height="16">
+            </a>
+            <a href="https://ph.linkedin.com/in/eahdollete" target="_blank">
+                <img src="images/linkedin.svg" alt="LinkedIn Profile" width="16" height="16">
+            </a>
+        </div>
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>Eunice Ann Dollete</p>
+            <p>© <span id="currentyear"></span> Tanay Chamber of Commerce</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>
