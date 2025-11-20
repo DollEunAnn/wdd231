@@ -111,6 +111,13 @@ main > h1 {
   padding: 0 0.5rem;
 }
 
+/* for form */
+.formContainerLayout {
+	display: grid;
+	grid-gap: 0.1rem;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  padding: 0 0.5rem;
+}
 
 /* Footer */
 footer {
