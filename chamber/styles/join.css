@@ -47,7 +47,7 @@ form {
     padding: 0;
 }
 
-#dialogBox .header {
+#dialogBox .dialogTitleheader {
     display: grid;
     grid-template-columns: auto 44px;
     gap: 1rem;
@@ -60,6 +60,6 @@ dialog::backdrop {
     background-color: var(--backdrop);
 }
 
-#dialogBox #content {
+#dialogBox .dialogContent {
     padding:0.5rem
 }
