@@ -63,3 +63,11 @@ dialog::backdrop {
 #dialogBox .dialogContent {
     padding:0.5rem
 }
+
+#price {
+    font-weight: 700;
+    padding:1rem 0;
+    text-align: center;
+    font-size: x-large;
+
+}
