@@ -98,6 +98,10 @@ header span {
 }
 
 /* Body */
+main {
+  min-height: 70vh;
+}
+
 main > h1 {
   padding-left: 0.5rem;
   text-align: left;

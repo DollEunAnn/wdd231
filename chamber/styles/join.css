@@ -1,3 +1,4 @@
+/* Form */
 form {
     display: flex;
     flex-direction: column;
@@ -5,6 +6,32 @@ form {
     padding:1rem 0;
 }
 
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 29rem;
+    height: 25px;
+}
+
+.formRow {
+    max-width: 15rem;
+}
+
+#applyBtn {
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 50%;
+    margin: 1rem 0;
+    padding:1rem;
+    border:var(--text-color) 1px solid;
+    border-radius: 30px;
+    background-color: var(--primary);
+}
+
+/* Membership Level */
+#membership-detail {
+    margin-top: 3rem;
+}
 
 #membership-detail > p {
     font-weight: 700;
@@ -93,4 +120,12 @@ dialog::backdrop {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* thank you page */
+#thankyouLayout {
+    text-align: center;
+    border: red 1px solid;
+    margin: auto;
+    padding:10rem 0;
 }

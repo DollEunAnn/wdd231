@@ -3,6 +3,7 @@ const closeButton = document.querySelector('#closeButton');
 const dialogBoxText = document.querySelector('.dialogContent');
 const title = document.querySelector('#title');
 
+// membership detail modal
 npButton.addEventListener("click", () => {
     dialogBox.showModal();
     title.textContent = "Non Profit Membership";
@@ -68,4 +69,10 @@ goldButton.addEventListener("click", () => {
 
 closeButton.addEventListener("click", () => {
     dialogBox.close();
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const loadTime = document.getElementById("timestamp");
+
+    loadTime.value = new Date().toLocaleString();
 });
