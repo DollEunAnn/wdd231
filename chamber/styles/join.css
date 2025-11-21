@@ -71,3 +71,26 @@ dialog::backdrop {
     font-size: x-large;
 
 }
+
+/* animation for cards */
+#membership-detail > div {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: easeIn 0.8s ease-out forwards;
+}
+
+#membership-detail > div:nth-child(2) { animation-delay: 0.1s; }
+#membership-detail > div:nth-child(3) { animation-delay: 0.2s; }
+#membership-detail > div:nth-child(4) { animation-delay: 0.3s; }
+#membership-detail > div:nth-child(5) { animation-delay: 0.4s; }
+
+@keyframes easeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
