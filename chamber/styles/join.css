@@ -1,4 +1,9 @@
 /* Form */
+.mainJoin {
+    padding:0 1rem;
+
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -9,8 +14,8 @@ form {
 input[type="text"],
 input[type="email"],
 input[type="tel"] {
-    width: 29rem;
-    height: 25px;
+    width: 28rem;
+    height: 35px;
 }
 
 .formRow {
@@ -123,9 +128,41 @@ dialog::backdrop {
 }
 
 /* thank you page */
-#thankyouLayout {
+#successMessage {
     text-align: center;
-    border: red 1px solid;
-    margin: auto;
-    padding:10rem 0;
+    margin:4rem 0;
 }
+
+#successMessage > p {
+    font-weight: 700;
+}
+
+#membershipDetail {
+    border: var(--text-color) solid 1px;
+    background-color: var(--primary);
+    margin: auto;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 80vw;
+    margin-bottom: 1.5rem;
+}
+
+#membershipDetail > div:first-child {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+#membershipDetail #memberId {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.memberDetails .line {
+    height: 1px;
+    background-color: var(--text-color);
+    margin:1rem 0;
+}
+
+
