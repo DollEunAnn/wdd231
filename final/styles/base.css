@@ -51,6 +51,10 @@ header {
     align-items: center;
 }
 
+.navigation {
+    display: none;
+}
+
 .navigation ul {
     display: flex;
     gap: 1rem;
@@ -156,3 +160,19 @@ footer a:hover {
 #color-palette span:nth-child(7) { background-color: #F7B878; }
 #color-palette span:nth-child(8) { background-color: #B7410E; color: #FFFFFF; }
 #color-palette span:nth-child(9) { background-color: #9DC183; }
+
+/* Wireframe and Typography */
+#wireframe img {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    max-width: 100%;
+}
+
+#wireframe p {
+    font-style: italic;
+    margin: 1rem;
+}
+
+#wireframe {
+    text-align: center;
+    padding:1rem;
+}
