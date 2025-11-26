@@ -40,6 +40,7 @@ body {
     margin: auto;
     font-family: 'Open Sans', sans-serif;
     background-color: var(--background);
+    color: var(--text-primary);
 }
 
 /* Header */
@@ -73,6 +74,12 @@ header {
 
 main {
     min-height: 55vh;
+}
+
+/* Header Main*/
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
 }
 
 /* Footer */
@@ -173,6 +180,11 @@ footer a:hover {
 }
 
 #wireframe {
+    font-family: 'Playfair Display', serif;
     text-align: center;
     padding:1rem;
+}
+
+#typo-info {
+    max-width: 100%;
 }
