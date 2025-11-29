@@ -153,15 +153,8 @@
     }
 
     .card img:hover {
-        box-shadow:
-        rgb(from var(--primary) r g b / 0.4) -5px 5px,
-        rgb(from var(--primary) r g b / 0.3) -10px 10px,
-        rgb(from var(--primary) r g b / 0.2) -15px 15px,
-        rgb(from var(--primary) r g b / 0.1) -20px 20px,
-        rgb(from var(--primary) r g b / 0.05) -25px 25px;
-
+        border:solid 5px var(--primary);
     }
-
 
 }
 
