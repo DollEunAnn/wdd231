@@ -23,6 +23,7 @@ tanayInterests.forEach(item => {
   img.alt = item.name;
   img.width = 300;
   img.height = 200;
+  img.loading= "lazy";
   figure.appendChild(img);
 
   // Address
