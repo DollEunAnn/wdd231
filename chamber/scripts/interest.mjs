@@ -68,4 +68,4 @@ if (!lastVisit) {
 }
 
 messageContainer.textContent = message;
-localStorage.setItem("lastVisit", now.toString());
+localStorage.setItem("lastVisit", today.toString());

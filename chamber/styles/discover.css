@@ -21,8 +21,10 @@
 }
 
 .card img {
-    width: 100%;
-    grid-area: photograph;
+   max-width: 100%;
+   height: auto;
+   display: block;
+   grid-area: photograph;
 }
 
 .card p {
