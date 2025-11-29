@@ -10,8 +10,8 @@
     grid-template-areas: 
     "name"
     "photograph"
-    "location"
     "description"
+    "location"
     "button";
 }
 
@@ -22,7 +22,12 @@
 
 .card img {
     width: 100%;
-    grid-area: image;
+    grid-area: photograph;
+}
+
+.card p {
+    margin: 0.5rem 1rem;
+    grid-area: description;
 }
 
 .card address {
@@ -30,10 +35,6 @@
     grid-area: location;
 }
 
-.card p {
-    margin: 0.5rem 1rem;
-    grid-area: description;
-}
 
 .card button {
     background-color: var(--primary);
