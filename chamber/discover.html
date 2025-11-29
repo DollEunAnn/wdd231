@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tanay Chamber of Commerce - Directory Page</title>
+    <title>Tanay Chamber of Commerce - Discover Page</title>
     <meta name="author" content="Eunice Ann Dollete" />
-    <meta name="description" content="Directory page of the businesses in the City of Tanay." />
+    <meta name="description" content="Membership Form at Join Page in Tanay Chamber of Commerce." />
 
     <!-- Open Graph meta tags -->
-    <meta property="og:title" content="Tanay Chamber of Commerce - Directory Page">
-    <meta property="og:description" content="Directory page of the businesses in the City of Tanay.">
+    <meta property="og:title" content="Tanay Chamber of Commerce - Join Page for Membership Sign Up">
+    <meta property="og:description" content="Join Form Page for Tanay Chamber of Commerce Membership.">
     <meta property="og:image" content="https://dolleunann.github.io/wdd231/chamber/images/chamber-preview.jpg">
     <meta property="og:url" content="https://dolleunann.github.io/wdd231">
 
@@ -18,6 +18,8 @@
 
     <!-- Style Sheets-->
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/discover.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
 
     <!-- Font -->
@@ -28,7 +30,8 @@
     <!-- Scripts -->
     <script defer src="scripts/navigation.js"></script>
     <script defer src="scripts/getdates.js"></script>
-    <script defer src="scripts/members.js"></script>
+    <script defer type="module" src="data/interest.mjs"></script>
+    <script defer type="module" src="scripts/interest.mjs"></script>
 </head>
 
 <body>
@@ -39,37 +42,27 @@
         <div class="navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li class="current"><a href="directory.html">Business Directory</a></li>
+                <li class="current"><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Business Directory</a></li>
                 <li><a href="join.html">Join</a></li>
             </ul>
         </div>
-
     </header>
     <!-- small screen -->
     <nav id="nav-bar" class="navigation">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="discover.html">Discover</a></li>
-            <li class="current"><a href="directory.html">Business Directory</a></li>
+            <li class="current"><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Business Directory</a></li>
             <li><a href="join.html">Join</a></li>
         </ul>
     </nav>
-
     <main>
-        <h1>Business Directory</h1>
-        <div class="menu">
-            <button id="grid" class="active" title="Grid View">
-                <img src="images/grid-solid-full.svg" alt="Grid view icon">
-            </button>
-            <button id="list" title="List View">
-                <img src="images/list-solid-full.svg" alt="List view icon">
-            </button>
-        </div>
+        <h1>Discover</h1>
+        <div id="cards"></div>
 
-        <div id="cards" class="grid"></div>
+        <div id="visit-message" class="visit-message"></div>
     </main>
-
     <footer>
         <div>
             <p class="font-bold">Tanay Chamber of Commerce</p>

@@ -1,4 +1,4 @@
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 64rem) {
     header, main, nav {
         padding-left: 5rem;
         padding-right: 5rem;
@@ -139,6 +139,11 @@
     .square-item {
         width: 50%;
         padding: 0 1rem;
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
 }
