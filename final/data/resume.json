@@ -1,0 +1,118 @@
+{
+  "education": [
+    {
+      "school": "STI College, Tanay",
+      "degree": "BS in Information Technology",
+      "location": "Philippines",
+      "yearCompleted": "2013"
+    },
+    {
+      "school": "Brigham Young Univesity, Idaho ",
+      "degree": "Professional Studies",
+      "location": "Online",
+      "yearCompleted": "2026"
+    }
+  ],
+  "workExperience": [
+    {
+      "company": "Smart Power Electric Corp., Procurement",
+      "role": "Procurement Officer",
+      "year-started": "2025",
+      "year-ended": "Present",
+      "location": "Philippines",
+    },
+    {
+      "company": "Astoria Plaza, Software Dev Department",
+      "role": "Programmer",
+      "year-started": "2018",
+      "year-ended": "2024",
+      "location": "Philippines",
+    },
+    {
+      "company": "Revlv Solutions Inc.",
+      "role": "IT Intern (On-the-Job Training)",
+      "year-started": "2017",
+      "year-ended": null,
+      "location": "Philippines",
+    },
+  ],
+  "projects": [
+    {
+      "title": "New Cydonia",
+      "tag": "Graphic Design",
+      "description": "Photo Manipulation Project.",
+      "for": "BYU-Idaho",
+      "year": 2024,
+      "tools": ["Photoshop"],
+      "photo": "images/projects/new-cydonia.webp"
+    },
+    {
+      "title": "Gana sa Isla",
+      "tag": "Graphic Design",
+      "description": "A project for the mothers in the Siargao.",
+      "for": "Calls Over Ridges, Philippines",
+      "year": 2025,
+      "tools": ["InDesign", "Photoshop"],
+      "photo": "images/projects/gana-sa-isla.webp"
+    },
+    {
+      "title": "Classic Book Cover",
+      "tag": "Graphic Design",
+      "description": "Love In the Time of Cholera was written.",
+      "for": "BYU-Idaho",
+      "year": 2025,
+      "tools": ["Photoshop", "Illustrator"],
+      "photo": "images/projects/classic-book-cover.webp"
+    },
+    {
+      "title": "Milsein Corp. Website",
+      "tag": "Web",
+      "description": "Landing page for Milsein Corp.",
+      "for": "Milsein Corp",
+      "year": 2024,
+      "tools": ["Tailwind CSS", "Figma"],
+      "photo": "images/projects/milsein-website.webp"
+    },
+    {
+      "title": "Portfolio Website",
+      "tag": "Web",
+      "description": "Portfolio Website.",
+      "for": "BYU-Idaho",
+      "year": 2025,
+      "tools": ["Pure HTML/CSS", "Figma"],
+      "photo": "images/projects/portfolio-website.webp"
+    }
+  ],
+ "skills": [
+    {
+      "name": "UI and UX Basics",
+      "type": "Design",
+      "level": "Intermediate",
+      "tools": ["Figma", "Wireframing", "Prototyping"]
+    },
+    {
+      "name": "Graphic Design",
+      "type": "Creative",
+      "level": "Intermediate",
+      "tools": ["Photoshop", "Illustrator", "InDesign"]
+    },
+    {
+      "name": "Front-end Development",
+      "type": "Web",
+      "level": "Intermediate",
+      "tools": ["HTML", "CSS", "Tailwind"]
+    },
+    {
+      "name": "Back-end Development & Databases",
+      "type": "Technical",
+      "level": "Beginner–Intermediate",
+      "tools": ["PHP Laravel", "Python", "MySQL", "SQLite"]
+    },
+    {
+      "name": "Project & Content Creation",
+      "type": "Creative + Web",
+      "level": "Proficient",
+      "tools": ["Print Layout", "Photo Editing", "Web Assets"]
+    }
+  ]
+}

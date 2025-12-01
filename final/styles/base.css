@@ -1,7 +1,7 @@
 :root {
   /* Colors */
   --primary: #FBCEB1;       /* Apricot */
-  --primary-dark: #F7B878;  /* Deep Apricot for hover */
+  --primary-dark: #F7B878;  /* Deep Apricot for hover / active */
   --accent: #008080;        /* Teal */
   --background: #FAF9F6;    /* Off-white */
   --text-primary: #333333;  /* Charcoal */
@@ -43,34 +43,74 @@ body {
     color: var(--text-primary);
 }
 
-/* Header */
+/* ======= Header ======= */
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: auto 1.5rem;
+    padding: 2rem 0;
+    column-gap: 1rem;
     align-items: center;
 }
 
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* ======= Navigation ======= */
 .navigation {
     display: none;
 }
 
+.navigation.show {
+    display: block;
+    height: 100vh;
+}
+
 .navigation ul {
-    display: flex;
-    gap: 1rem;
     list-style: none;
 }
 
 .navigation a {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
     text-decoration: none;
+    border-bottom: var(--border) solid 1px;
     color: var(--text-primary);
 }
 
 .navigation a:hover {
-    text-decoration: none;
-    color: var(--accent);
+    color: var(--primary-dark);
 }
+
+.navigation.show li.current {
+    background-color: var(--primary-dark);
+}
+
+.navigation.show li.current:hover {
+    background-color: var(--background);
+}
+
+
+/* Hamburger */
+.hamburger {
+    background: none;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+  content:"\00D7"
+}
+
 
 main {
     min-height: 55vh;

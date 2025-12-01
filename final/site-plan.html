@@ -30,21 +30,32 @@
 
     <!-- Scripts -->
     <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/navigation.js"></script>
 </head>
 
 
 <body>
     <header>
+        <!-- <img src="images/circle-solid.svg" alt="site-logo" width="512" height="512"> -->
         <span id="site-name">euniceann</span>
-        <div class="navigation">
+        <button id="ham-btn" aria-label="Hamburger Menu" class="hamburger"></button>
+        <div id="nav-bar-large" class="navigation">
             <ul>
-                <li class="current"><a href="#">About Me</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Resume</a></li>
+                <li><a href="index.html">Work</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
     </header>
+    <!-- mobile -->
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Resume</a></li>
+        </ul>
+    </nav>
     <main>
         <div class="header-hero">
             <h1 class="hh-title">Site Plan</h1>
@@ -120,13 +131,13 @@
         <div>
             <h4>Site Map</h4>
             <p>
-                <a href="#">About Me</a>
+                <a href="about.html">About Me</a>
             </p>
             <p>
-                <a href="#">Work</a>
+                <a href="index.html">Work</a>
             </p>
             <p>
-                <a href="#">Contact</a>
+                <a href="contact.html">Contact</a>
             </p>
             <p>
                 <a href="#">Resume</a>
