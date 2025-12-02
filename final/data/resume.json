@@ -19,22 +19,22 @@
       "role": "Procurement Officer",
       "year-started": "2025",
       "year-ended": "Present",
-      "location": "Philippines",
+      "location": "Philippines"
     },
     {
       "company": "Astoria Plaza, Software Dev Department",
       "role": "Programmer",
       "year-started": "2018",
       "year-ended": "2024",
-      "location": "Philippines",
+      "location": "Philippines"
     },
     {
       "company": "Revlv Solutions Inc.",
       "role": "IT Intern (On-the-Job Training)",
       "year-started": "2017",
       "year-ended": null,
-      "location": "Philippines",
-    },
+      "location": "Philippines"
+    }
   ],
   "projects": [
     {
@@ -44,7 +44,7 @@
       "for": "BYU-Idaho",
       "year": 2024,
       "tools": ["Photoshop"],
-      "photo": "images/projects/new-cydonia.webp"
+      "photo": "images/preview.png"
     },
     {
       "title": "Gana sa Isla",
@@ -53,7 +53,7 @@
       "for": "Calls Over Ridges, Philippines",
       "year": 2025,
       "tools": ["InDesign", "Photoshop"],
-      "photo": "images/projects/gana-sa-isla.webp"
+      "photo": "images/preview.png"
     },
     {
       "title": "Classic Book Cover",
@@ -62,7 +62,7 @@
       "for": "BYU-Idaho",
       "year": 2025,
       "tools": ["Photoshop", "Illustrator"],
-      "photo": "images/projects/classic-book-cover.webp"
+      "photo": "images/preview.png"
     },
     {
       "title": "Milsein Corp. Website",
@@ -71,7 +71,7 @@
       "for": "Milsein Corp",
       "year": 2024,
       "tools": ["Tailwind CSS", "Figma"],
-      "photo": "images/projects/milsein-website.webp"
+      "photo": "images/preview.png"
     },
     {
       "title": "Portfolio Website",
@@ -80,10 +80,10 @@
       "for": "BYU-Idaho",
       "year": 2025,
       "tools": ["Pure HTML/CSS", "Figma"],
-      "photo": "images/projects/portfolio-website.webp"
+      "photo": "images/preview.png"
     }
   ],
- "skills": [
+  "skills": [
     {
       "name": "UI and UX Basics",
       "type": "Design",

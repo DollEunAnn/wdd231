@@ -6,7 +6,7 @@
     #nav-bar {
         display: none;
     }
-
+    
     .hamburger {
         display: none;
     }
@@ -29,12 +29,13 @@
 
     .navigation {
         display: block;
-        align-items:end ;
+        align-items:end;
     }
 
     .navigation ul {
         display: flex;
         align-items: end;
+        justify-content:space-between ;
         gap: 1rem;
     }
 
@@ -44,5 +45,16 @@
 
     .navigation li.current {
        border-bottom: var(--primary-dark) 1px solid;
+    }
+
+    /* work / projects */
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .workCard {
+        margin-bottom: 0;
     }
 }
