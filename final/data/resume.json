@@ -1,45 +1,45 @@
 {
   "education": [
     {
-      "school": "STI College, Tanay",
-      "degree": "BS in Information Technology",
-      "location": "Philippines",
-      "yearCompleted": "2013"
-    },
-    {
       "school": "Brigham Young Univesity, Idaho ",
       "degree": "Professional Studies",
       "location": "Online",
       "yearCompleted": "2026"
+    },
+    {
+      "school": "STI College, Tanay",
+      "degree": "BS in Information Technology",
+      "location": "Philippines",
+      "yearCompleted": "2013"
     }
   ],
   "workExperience": [
     {
-      "company": "Smart Power Electric Corp., Procurement",
+      "company": "Smart Power Electric Corp.",
       "role": "Procurement Officer",
-      "year-started": "2025",
-      "year-ended": "Present",
+      "yearStarted": "2024",
+      "yearEnded": "Present",
       "location": "Philippines"
     },
     {
-      "company": "Astoria Plaza, Software Dev Department",
+      "company": "Astoria Plaza",
       "role": "Programmer",
-      "year-started": "2018",
-      "year-ended": "2024",
+      "yearStarted": "2018",
+      "yearEnded": "2024",
       "location": "Philippines"
     },
     {
       "company": "Revlv Solutions Inc.",
       "role": "IT Intern (On-the-Job Training)",
-      "year-started": "2017",
-      "year-ended": null,
+      "yearStarted": "2016",
+      "yearEnded": "2017",
       "location": "Philippines"
     }
   ],
   "projects": [
     {
       "title": "New Cydonia",
-      "tag": "Graphic Design",
+      "tag": "GRAPHIC DESIGN",
       "description": "Photo Manipulation Project.",
       "for": "BYU-Idaho",
       "year": 2024,
@@ -48,7 +48,7 @@
     },
     {
       "title": "Gana sa Isla",
-      "tag": "Graphic Design",
+      "tag": "GRAPHIC DESIGN",
       "description": "A project for the mothers in the Siargao.",
       "for": "Calls Over Ridges, Philippines",
       "year": 2025,
@@ -57,7 +57,7 @@
     },
     {
       "title": "Classic Book Cover",
-      "tag": "Graphic Design",
+      "tag": "GRAPHIC DESIGN",
       "description": "Love In the Time of Cholera was written.",
       "for": "BYU-Idaho",
       "year": 2025,
@@ -113,6 +113,32 @@
       "type": "Creative + Web",
       "level": "Proficient",
       "tools": ["Print Layout", "Photo Editing", "Web Assets"]
+    }
+  ],
+  "photoGallery": [
+    {
+      "alt": "UI and UX Basics",
+      "photoUrl": "Design"
+    },
+    {
+      "alt": "UI and UX Basics",
+      "photoUrl": "Design"
+    },
+    {
+      "alt": "UI and UX Basics",
+      "photoUrl": "Design"
+    },
+    {
+      "alt": "UI and UX Basics",
+      "photoUrl": "Design"
+    },
+    {
+      "alt": "UI and UX Basics",
+      "photoUrl": "Design"
+    },
+    {
+      "alt": "UI and UX Basics",
+      "photoUrl": "Design"
     }
   ]
 }

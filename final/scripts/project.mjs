@@ -1,9 +1,9 @@
 // dialog
-const mydialog = document.querySelector('#mydialog');
-const mytitle = document.querySelector('#mydialog h2');
-const myclose = document.querySelector('#mydialog button');
-const myinfo = document.querySelector('#mydialog p');
-
+const mydialog = document.querySelector('#dialogBox');
+const mytitle = document.querySelector('#dialogBox h2');
+const myclose = document.querySelector('#dialogBox button');
+const myinfo = document.querySelector('#dialogBox p');
+const fullImage = document.querySelector('#dialogBox img');
 const cards = document.querySelector('.cards');
 
 export function displayProjects(projects) {
@@ -14,7 +14,8 @@ export function displayProjects(projects) {
         const preview = document.createElement('img');
         const title = document.createElement('h2');
         const description = document.createElement('p');
-        const pill = document.createElement('div');
+        const pillContainer = document.createElement('div');
+        const pill = document.createElement('span');
 
         preview.setAttribute('src', `${project.photo}`);
         preview.setAttribute('alt', `Preview of ${project.title}`);
@@ -26,7 +27,9 @@ export function displayProjects(projects) {
         description.textContent = `${project.for}, ${project.year}`;
         pill.textContent = project.tag;
 
-        workCard.append(preview, title, description, pill);
+        pillContainer.appendChild(pill);
+
+        workCard.append(preview, title, description, pillContainer);
 
         workCard.addEventListener('click', () => showDetail(project));
 
@@ -35,8 +38,12 @@ export function displayProjects(projects) {
 }
 
 function showDetail(project) {
+    
     mytitle.textContent = project.title;
     myinfo.textContent = project.description;
+    fullImage.setAttribute('src', `${project.photo}`);
+
+
     mydialog.showModal();
 }
 

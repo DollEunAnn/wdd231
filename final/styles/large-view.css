@@ -57,4 +57,33 @@
     .workCard {
         margin-bottom: 0;
     }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap:1rem;
+    }
+
+    .columnContainer {
+        margin:auto;
+        width: 60%;
+        display: flex;
+        column-gap: 5rem;
+        align-items: baseline;
+    }
+
+    #aboutHeaderDetails {
+        margin: auto;
+        width: 60%;
+    }
+
+    .dialogContentContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #dialogBox img {
+        display: block;
+        width: 100%;
+    }
 }
