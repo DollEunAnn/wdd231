@@ -9,7 +9,7 @@
   --border: #DDDDDD;        /* Light Gray */
   --error: #B7410E;         /* Russet Red */
   --success: #9DC183;       /* Sage Green */
-  --primary-backdrop: #fbcfb179;
+  --primary-backdrop: #4b4b4a79;
 
   --font-body: 1rem;        /* 16px */
   --font-h1: 2.5rem;        /* 40px */
@@ -234,44 +234,68 @@ footer a:hover {
 }
 
 /* ===== workCard ====== */
-.wordCard-link {
+
+.workCard-link {
     text-decoration: none;
     color: var(--text);
+    display: block;
 }
 
+/* Main card */
+.workCard {
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem 0;
+    transition: color 0.3s ease;
+}
+
+/* Hover card - TEXT COLOR RED */
 .workCard:hover {
     cursor: pointer;
     color: var(--primary-dark);
-    border:var(--primary-dark) 2px solid;
 }
 
-.workCard div > span:hover {
-    border:var(--primary-dark) 2px solid;
-
+.workCard:hover .pill {
+    cursor: pointer;
+    border:var(--primary-dark) 1px solid;
+    color: var(--primary-dark);
 }
 
-.workCard {
-    border:var(--text-primary) 2px solid;
-    border-radius: 10px;
-    padding:1rem;
-    margin: 1rem 0;
+.workCard:hover img {
+    border: var(--primary-dark) 2px solid;
 }
 
 .workCard img {
+    border: var(--accent) 2px solid;
     border-radius: 8px;
+    display: block;
+    width: 100%;
+}
+
+/* PILL inside workCard */
+.workCard .pill {
+    border: 1px solid var(--accent);
+    border-radius: 5px;
+    padding: 0.2rem 0.5rem;
 }
 
 .workCard h2 {
+    font-family: "Playfair Display";
     color: var(--text);
-    font-size: large;
+    font-size: x-large;
     font-weight: 700;
     text-decoration: none;
-    margin-bottom: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+.workCard p {
+    font-weight: 600;
 }
 
 .workCard > div {
     margin:1rem 0;
 }
+
 .workCard div > span {
     font-weight: 600;
     font-size: small;
@@ -308,6 +332,7 @@ footer a:hover {
 
 /* modal / dialog */
 #dialogBox {
+    text-align: center;
     padding: 0;
     border: none;
     width: 90%;             /* fits on mobile */
@@ -325,6 +350,7 @@ footer a:hover {
 }
 
 #dialogBox .dialogTitleHeader {
+    font-family: "Playfair Display";
     display: grid;
     grid-template-columns: auto 44px;
     gap: 1rem;
@@ -334,7 +360,7 @@ footer a:hover {
 }
 
 #dialogBox .dialogContent {
-    padding:0.5rem
+    padding:2rem;
 }
 
 /* about */

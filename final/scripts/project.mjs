@@ -16,6 +16,7 @@ export function displayProjects(projects) {
         const description = document.createElement('p');
         const pillContainer = document.createElement('div');
         const pill = document.createElement('span');
+        pill.className = 'pill';
 
         preview.setAttribute('src', `${project.photo}`);
         preview.setAttribute('alt', `Preview of ${project.title}`);

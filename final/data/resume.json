@@ -38,13 +38,22 @@
   ],
   "projects": [
     {
+      "title": "Milsein Corp. Website",
+      "tag": "Web",
+      "description": "Landing page for Milsein Corp.",
+      "for": "Milsein Corp",
+      "year": 2024,
+      "tools": ["Tailwind CSS", "Figma"],
+      "photo": "images/milsein.jpg"
+    },
+    {
       "title": "New Cydonia",
       "tag": "GRAPHIC DESIGN",
       "description": "Photo Manipulation Project.",
       "for": "BYU-Idaho",
       "year": 2024,
       "tools": ["Photoshop"],
-      "photo": "images/preview.png"
+      "photo": "images/new-cydonia.jpg"
     },
     {
       "title": "Gana sa Isla",
@@ -53,7 +62,7 @@
       "for": "Calls Over Ridges, Philippines",
       "year": 2025,
       "tools": ["InDesign", "Photoshop"],
-      "photo": "images/preview.png"
+      "photo": "images/gana.jpg"
     },
     {
       "title": "Classic Book Cover",
@@ -62,16 +71,7 @@
       "for": "BYU-Idaho",
       "year": 2025,
       "tools": ["Photoshop", "Illustrator"],
-      "photo": "images/preview.png"
-    },
-    {
-      "title": "Milsein Corp. Website",
-      "tag": "Web",
-      "description": "Landing page for Milsein Corp.",
-      "for": "Milsein Corp",
-      "year": 2024,
-      "tools": ["Tailwind CSS", "Figma"],
-      "photo": "images/preview.png"
+      "photo": "images/book.jpg"
     },
     {
       "title": "Portfolio Website",
