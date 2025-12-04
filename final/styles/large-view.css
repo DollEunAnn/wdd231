@@ -86,4 +86,17 @@
         display: block;
         width: 100%;
     }
+
+    #dialogBox {
+        text-align: center;
+        padding: 0;
+        border: none;
+        width: 90%;             /* fits on mobile */
+        max-width: 50%;       /* size on large screens */
+        margin: auto;           /* forces perfect center */
+    }
+
+    .dialogTitleHeader h2 {
+        font-size: 2rem;
+    }
 }

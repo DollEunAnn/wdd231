@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Eunice</title>
+    <meta name="author" content="Eunice Ann Dollete" />
+    <meta name="description" content="Contact Page of Eunice Ann's Portfolio" />
+
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="Eunice Ann Portfolio Website - Work Page">
+    <meta property="og:description" content="Contact Form for Eunice Ann.">
+    <meta property="og:image" content="https://dolleunann.github.io/wdd231/final/images/preview.png">
+    <meta property="og:url" content="https://dolleunann.github.io/wdd231/final">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Style Sheets-->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large-view.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Scripts -->
+    <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/navigation.js"></script>
+</head>
+
+
+<body>
+    <header>
+        <span id="site-name">euniceann</span>
+        <button id="ham-btn" aria-label="Hamburger Menu" class="hamburger"></button>
+        <div id="nav-bar-large" class="navigation">
+            <ul>
+                <li><a href="index.html">Work</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li class="current"><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- mobile -->
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="current"><a href="#">Resume</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="header-hero">
+            <h1 class="hh-title">Contact</h1>
+            <p class="hh-sub">What can I help you with? Send me a message!</p>
+        </div>
+        <div class="container">
+            <div>
+                <form method="GET" action="thanks.html" class="designOne">
+                    <label>First Name <input type="text" name="first" required autocomplete="given-name"
+                            title="Your First Name"></label>
+                    <label>Last Name <input type="text" name="last" required autocomplete="family-name"
+                            title="Your Last Name"></label>
+                    <label>Cell Phone <input type="tel" name="phone" autocomplete="tel"
+                            title="A Phone Number with dashes" placeholder="987-555-1234"></label>
+                    <label>Email <input type="email" name="email" required placeholder="john89@gmail.com"
+                            title="Your Email" autocomplete="email"></label>
+
+
+                    <h3>Select Ordinance</h3>
+                    <label><input type="radio" name="ordinance" value="Baptism" checked> Proxy Baptism</label>
+                    <label><input type="radio" name="ordinance" value="Initiatory"> Proxy Initiatory</label>
+                    <label><input type="radio" name="ordinance" value="Endowment"> Proxy Endowment</label>
+                    <label><input type="radio" name="ordinance" value="Sealing"> Proxy Sealing</label>
+
+
+                    <h3>Date and Location</h3>
+                    <label>Date <input type="date" name="date" required></label>
+
+                    <label>Location
+                        <select name="location" required>
+                            <option value="">None</option>
+                            <option value="Payson">Payson</option>
+                            <option value="Orem">Orem</option>
+                            <option value="Provo City Center">Provo City Center</option>
+                    </label>
+
+                    <input type="submit" value="Schedule An Appointment">
+                </form>
+
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <div>
+            <h4>© EUNICEANN, <span id="currentyear"></span></h4>
+        </div>
+        <div></div>
+        <div>
+            <h4>Site Map</h4>
+            <p>
+                <a href="about.html">About Me</a>
+            </p>
+            <p>
+                <a href="index.html">Work</a>
+            </p>
+            <p>
+                <a href="contact.html">Contact</a>
+            </p>
+            <p>
+                <a href="#">Resume</a>
+            </p>
+            <p>
+                <a href="attribution.html">Attributions</a>
+            </p>
+
+
+        </div>
+        <div>
+            <h4>My Contact</h4>
+            <p><a href="#">LinkedIn</a></p>
+            <p><a href="#">Email</a></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

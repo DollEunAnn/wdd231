@@ -44,7 +44,7 @@ function displayEducation(schools) {
         const location = document.createElement('address');
 
         title.textContent = `${school.school}`;
-        description.textContent = `${school.degree}`;
+        description.textContent = `${school.degree} • ${school.yearCompleted}`;
         location.textContent = `${school.location}`;
 
         details.append(title, description, location);
@@ -62,7 +62,7 @@ function displaySkills(skills) {
         const description = document.createElement('p');
         const tools = document.createElement('p');
 
-        title.textContent = `${skill.name}`;
+        title.textContent = `${skill.name} (${skill.level})`;
         description.textContent = `${skill.type}`;
         tools.textContent = `${skill.tools.join(', ')}`;
 
@@ -71,3 +71,38 @@ function displaySkills(skills) {
         skillContainer.append(details);
     });
 }
+
+// MUSIC SETUP
+const music = document.getElementById("bgMusic");
+const toggle = document.getElementById("musicToggle");
+
+// Load saved volume or default to 40%
+const savedVolume = localStorage.getItem("musicVolume");
+music.volume = savedVolume !== null ? savedVolume : 0.2;
+
+// Load saved play state
+const savedState = localStorage.getItem("musicPlaying");
+// console.log(savedState);
+
+if (savedState === "true") {
+    music.play().then(() => {
+        toggle.textContent = "🔊 Music";
+    }).catch(() => {
+        // if the autoplay got block
+        toggle.textContent = "▶ Music";
+    });
+}
+
+// Toggle play/pause
+toggle.addEventListener("click", () => {
+    if (music.paused) {
+        music.play();
+        toggle.textContent = "🔊 Music";
+        localStorage.setItem("musicPlaying", "true");
+    } else {
+        music.pause();
+        toggle.textContent = "🔇 Music";
+        localStorage.setItem("musicPlaying", "false");
+    }
+});
+

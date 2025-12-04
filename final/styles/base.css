@@ -336,10 +336,9 @@ footer a:hover {
     padding: 0;
     border: none;
     width: 90%;             /* fits on mobile */
-    max-width: 50%;       /* size on large screens */
+    max-width: 80%;       /* size on large screens */
     margin: auto;           /* forces perfect center */
 }
-
 
 #dialogBox img {
     display: none;
@@ -349,13 +348,17 @@ footer a:hover {
     padding: 0;
 }
 
+.dialogTitleHeader h2 {
+    font-size: large;
+}
+
 #dialogBox .dialogTitleHeader {
     font-family: "Playfair Display";
     display: grid;
     grid-template-columns: auto 44px;
     gap: 1rem;
     background-color: var(--primary);
-    border-bottom: #aaa 1px solid;
+    border-bottom: var(--border) 1px solid;
     padding: 0.5rem;
 }
 
@@ -367,7 +370,6 @@ footer a:hover {
 .columnContainer {
     margin:4rem 0;
 }
-
 
 .heading {
     font-family: "Playfair Display";
@@ -401,3 +403,25 @@ footer a:hover {
 }
 
 
+/* music */
+#musicToggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #222;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+#musicToggle:hover {
+    background: #444;
+}
+
+#musicToggle:active {
+    transform: scale(0.95);
+}
