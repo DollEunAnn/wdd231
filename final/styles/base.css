@@ -165,7 +165,6 @@ footer a:hover {
     font-size: large;
     margin: 2.5rem 0;
     font-weight: 500;
-
 }
 
 .hh-title {
@@ -332,7 +331,6 @@ footer a:hover {
 
 /* modal / dialog */
 #dialogBox {
-    text-align: center;
     padding: 0;
     border: none;
     width: 90%;             /* fits on mobile */

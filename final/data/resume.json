@@ -44,34 +44,7 @@
       "for": "Milsein Corp",
       "year": 2024,
       "tools": ["Tailwind CSS", "Figma"],
-      "photo": "images/milsein.jpg"
-    },
-    {
-      "title": "New Cydonia",
-      "tag": "GRAPHIC DESIGN",
-      "description": "A photo manipulation project.",
-      "for": "BYU-Idaho",
-      "year": 2024,
-      "tools": ["Photoshop"],
-      "photo": "images/new-cydonia.jpg"
-    },
-    {
-      "title": "Gana sa Isla",
-      "tag": "GRAPHIC DESIGN",
-      "description": "A project for the mothers in the Siargao.",
-      "for": "Calls Over Ridges, Philippines",
-      "year": 2025,
-      "tools": ["InDesign", "Photoshop"],
-      "photo": "images/gana.jpg"
-    },
-    {
-      "title": "Classic Book Cover",
-      "tag": "GRAPHIC DESIGN",
-      "description": "Love In the Time of Cholera was written.",
-      "for": "BYU-Idaho",
-      "year": 2025,
-      "tools": ["Photoshop", "Illustrator"],
-      "photo": "images/book.jpg"
+      "photo": "images/milsein.webp"
     },
     {
       "title": "Portfolio Website",
@@ -80,7 +53,34 @@
       "for": "BYU-Idaho",
       "year": 2025,
       "tools": ["Pure HTML/CSS", "Figma"],
-      "photo": "images/preview.png"
+      "photo": "images/portfolio.webp"
+    },
+    {
+      "title": "New Cydonia",
+      "tag": "GRAPHIC DESIGN",
+      "description": "A photo manipulation project.",
+      "for": "BYU-Idaho",
+      "year": 2024,
+      "tools": ["Photoshop"],
+      "photo": "images/new-cydonia.webp"
+    },
+    {
+      "title": "Gana sa Isla",
+      "tag": "GRAPHIC DESIGN",
+      "description": "A project for the mothers in the Siargao.",
+      "for": "Calls Over Ridges, Philippines",
+      "year": 2025,
+      "tools": ["InDesign", "Photoshop"],
+      "photo": "images/gana.webp"
+    },
+    {
+      "title": "Classic Book Cover",
+      "tag": "GRAPHIC DESIGN",
+      "description": "Love In the Time of Cholera was written.",
+      "for": "BYU-Idaho",
+      "year": 2025,
+      "tools": ["Photoshop", "Illustrator"],
+      "photo": "images/book.webp"
     }
   ],
   "skills": [
@@ -113,32 +113,6 @@
       "type": "Creative + Web",
       "level": "Proficient",
       "tools": ["Print Layout", "Photo Editing", "Web Assets"]
-    }
-  ],
-  "photoGallery": [
-    {
-      "alt": "UI and UX Basics",
-      "photoUrl": "Design"
-    },
-    {
-      "alt": "UI and UX Basics",
-      "photoUrl": "Design"
-    },
-    {
-      "alt": "UI and UX Basics",
-      "photoUrl": "Design"
-    },
-    {
-      "alt": "UI and UX Basics",
-      "photoUrl": "Design"
-    },
-    {
-      "alt": "UI and UX Basics",
-      "photoUrl": "Design"
-    },
-    {
-      "alt": "UI and UX Basics",
-      "photoUrl": "Design"
     }
   ]
 }
