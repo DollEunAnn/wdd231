@@ -378,6 +378,10 @@ footer a:hover {
     font-weight: 400;
 }
 
+.details > h3 > a {
+    color: var(--accent);
+}
+
 /* aboutHeader */
 #aboutHeaderImage {
     margin-bottom: 3rem;

@@ -2,8 +2,13 @@
 const mydialog = document.querySelector('#dialogBox');
 const mytitle = document.querySelector('#dialogBox h2');
 const myclose = document.querySelector('#dialogBox button');
-const myinfo = document.querySelector('#dialogBox p');
-const fullImage = document.querySelector('#dialogBox img');
+const contentContainer = document.querySelector('.dialogContentContainer');
+
+const myInfo = document.createElement('p');
+myInfo.className = 'dialogContent';
+
+const fullImage = document.createElement('img');
+
 const cards = document.querySelector('.cards');
 
 export function displayProjects(projects) {
@@ -41,9 +46,13 @@ export function displayProjects(projects) {
 function showDetail(project) {
     
     mytitle.textContent = project.title;
-    myinfo.textContent = project.description;
-    fullImage.setAttribute('src', `${project.photo}`);
+    myInfo.textContent = project.description;
 
+    fullImage.setAttribute('src', `${project.photo}`);
+    fullImage.setAttribute('alt', `${project.photo}`);
+    fullImage.loading = 'lazy';
+
+    contentContainer.append(fullImage, myInfo);
 
     mydialog.showModal();
 }
