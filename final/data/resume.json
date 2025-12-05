@@ -39,8 +39,8 @@
   "projects": [
     {
       "title": "Milsein Corp. Website",
-      "tag": "Web",
-      "description": "Landing page for Milsein Corp.",
+      "tag": "WEB",
+      "description": "A landing page created for Milsein Corp.",
       "for": "Milsein Corp",
       "year": 2024,
       "tools": ["Tailwind CSS", "Figma"],
@@ -49,7 +49,7 @@
     {
       "title": "New Cydonia",
       "tag": "GRAPHIC DESIGN",
-      "description": "Photo Manipulation Project.",
+      "description": "A photo manipulation project.",
       "for": "BYU-Idaho",
       "year": 2024,
       "tools": ["Photoshop"],
@@ -75,7 +75,7 @@
     },
     {
       "title": "Portfolio Website",
-      "tag": "Web",
+      "tag": "WEB",
       "description": "Portfolio Website.",
       "for": "BYU-Idaho",
       "year": 2025,

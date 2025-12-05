@@ -62,7 +62,7 @@ function displaySkills(skills) {
         const description = document.createElement('p');
         const tools = document.createElement('p');
 
-        title.textContent = `${skill.name} (${skill.level})`;
+        title.textContent = `${skill.name} `;
         description.textContent = `${skill.type}`;
         tools.textContent = `${skill.tools.join(', ')}`;
 

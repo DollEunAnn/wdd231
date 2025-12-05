@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eunice's Work</title>
+    <title>Contact Eunice</title>
     <meta name="author" content="Eunice Ann Dollete" />
-    <meta name="description" content="Work Page of Eunice Ann's Portfolio" />
+    <meta name="description" content="Contact Page of Eunice Ann's Portfolio" />
 
     <!-- Open Graph meta tags -->
     <meta property="og:title" content="Eunice Ann Portfolio Website - Work Page">
-    <meta property="og:description" content="Summary details about Eunice Ann's Works and Projects.">
+    <meta property="og:description" content="Contact Form for Eunice Ann.">
     <meta property="og:image" content="https://dolleunann.github.io/wdd231/final/images/preview.png">
     <meta property="og:url" content="https://dolleunann.github.io/wdd231/final">
 
@@ -30,7 +30,7 @@
     <!-- Scripts -->
     <script defer src="scripts/getdates.js"></script>
     <script defer src="scripts/navigation.js"></script>
-    <script defer type="module" src="scripts/main.mjs"></script>
+    <script defer src="scripts/thank.js"></script>
 </head>
 
 
@@ -40,7 +40,7 @@
         <button id="ham-btn" aria-label="Hamburger Menu" class="hamburger"></button>
         <div id="nav-bar-large" class="navigation">
             <ul>
-                <li class="current"><a href="index.html">Work</a></li>
+                <li><a href="index.html">Work</a></li>
                 <li><a href="about.html">About Me</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -49,31 +49,20 @@
     <!-- mobile -->
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li class="current"><a href="index.html">Work</a></li>
+            <li><a href="index.html">Work</a></li>
             <li><a href="about.html">About Me</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Resume</a></li>
         </ul>
     </nav>
     <main>
         <div class="header-hero">
-            <h1 class="hh-title">Work</h1>
-            <p class="hh-sub">Hi! I'm Eunice and I enjoy web developement and graphic design.</p>
+            <h1 class="hh-title">Thank you!</h1>
+            <p class="hh-sub">I'll check my email and send a reply as soon as possible!</p>
         </div>
         <div class="container">
-            <div class="cards"></div>
-        </div>
-        <div class="container">
-            <!-- One single dialog for all temples -->
-            <dialog id="dialogBox">
-                <div class="dialogTitleHeader">
-                    <h2>Sample Title</h2>
-                    <button>X</button>
-                </div>
-                <div class="dialogContentContainer">
-                    <img src="" alt="">
-                    <p class="dialogContent"></p>
-                </div>
-            </dialog>
+            <div id="messageResults">
+            </div>
         </div>
     </main>
     <footer>
@@ -93,12 +82,18 @@
                 <a href="contact.html">Contact</a>
             </p>
             <p>
+                <a href="#">Resume</a>
+            </p>
+            <p>
                 <a href="attribution.html">Attributions</a>
             </p>
+
+
         </div>
         <div>
             <h4>My Contact</h4>
-            <p><a href="https://www.linkedin.com/in/eahdollete/">LinkedIn</a></p>
+            <p><a href="#">LinkedIn</a></p>
+            <p><a href="#">Email</a></p>
         </div>
     </footer>
 

@@ -51,7 +51,6 @@
             <li><a href="index.html">Work</a></li>
             <li><a href="about.html">About Me</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li class="current"><a href="#">Resume</a></li>
         </ul>
     </nav>
     <main>
@@ -60,41 +59,30 @@
             <p class="hh-sub">What can I help you with? Send me a message!</p>
         </div>
         <div class="container">
-            <div>
-                <form method="GET" action="thanks.html" class="designOne">
-                    <label>First Name <input type="text" name="first" required autocomplete="given-name"
-                            title="Your First Name"></label>
-                    <label>Last Name <input type="text" name="last" required autocomplete="family-name"
-                            title="Your Last Name"></label>
-                    <label>Cell Phone <input type="tel" name="phone" autocomplete="tel"
-                            title="A Phone Number with dashes" placeholder="987-555-1234"></label>
-                    <label>Email <input type="email" name="email" required placeholder="john89@gmail.com"
-                            title="Your Email" autocomplete="email"></label>
+            <div class="formWrapContainer">
+                <form method="GET" action="thank.html">
+                    <div class="formRow">
+                        <label>To : <span id="nameButton">Eunice Ann</span><input type="text" name="to-email"
+                                value="contact@euniceann.com" hidden title="Eunice's Email"></label>
+                    </div>
+                    <div class="formRow">
+                        <label>From : <input type="email" name="from-email" required placeholder="john89@gmail.com"
+                                title="Your Email" autocomplete="email"></label>
+                    </div>
+                    <div class="formRow">
+                        <label>Contact No : <input type="tel" name="phone" autocomplete="tel"
+                                title="A Phone Number with dashes" placeholder="987-555-1234"></label>
+                    </div>
+                    <div class="formRow" id="textArea">
+                        <label for="message">Your Message: </label>
+                        <textarea id="message" name="message" placeholder="Type your message here."
+                            title="Describe your business or organization" rows="15" columns="20"></textarea>
 
-
-                    <h3>Select Ordinance</h3>
-                    <label><input type="radio" name="ordinance" value="Baptism" checked> Proxy Baptism</label>
-                    <label><input type="radio" name="ordinance" value="Initiatory"> Proxy Initiatory</label>
-                    <label><input type="radio" name="ordinance" value="Endowment"> Proxy Endowment</label>
-                    <label><input type="radio" name="ordinance" value="Sealing"> Proxy Sealing</label>
-
-
-                    <h3>Date and Location</h3>
-                    <label>Date <input type="date" name="date" required></label>
-
-                    <label>Location
-                        <select name="location" required>
-                            <option value="">None</option>
-                            <option value="Payson">Payson</option>
-                            <option value="Orem">Orem</option>
-                            <option value="Provo City Center">Provo City Center</option>
-                    </label>
-
-                    <input type="submit" value="Schedule An Appointment">
+                        <!-- button -->
+                        <input id="button" type="submit" value="Send Your Message 💌">
+                    </div>
                 </form>
-
             </div>
-
         </div>
     </main>
     <footer>
@@ -114,9 +102,6 @@
                 <a href="contact.html">Contact</a>
             </p>
             <p>
-                <a href="#">Resume</a>
-            </p>
-            <p>
                 <a href="attribution.html">Attributions</a>
             </p>
 
@@ -125,7 +110,6 @@
         <div>
             <h4>My Contact</h4>
             <p><a href="#">LinkedIn</a></p>
-            <p><a href="#">Email</a></p>
         </div>
     </footer>
 

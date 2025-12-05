@@ -67,8 +67,9 @@
     .columnContainer {
         margin:auto;
         width: 60%;
-        display: flex;
-        column-gap: 5rem;
+        display: grid;
+        grid-template-columns: 200px 500px;
+        column-gap: 3rem;
         align-items: baseline;
     }
 
@@ -99,4 +100,29 @@
     .dialogTitleHeader h2 {
         font-size: 2rem;
     }
+
+    /* form */
+    .formRow {
+        padding: 2rem;
+    }
+    .formRow label {
+        padding:2rem;
+        width: 100%;
+    }
+
+    #nameButton {
+        padding: 1rem;
+    }
+
+    #textArea label {
+        padding:1rem 2rem 0;
+    }
+
+    textarea {
+        margin: 20px;
+        padding:1rem;
+        border:none;
+        background:none;
+    }
+
 }
