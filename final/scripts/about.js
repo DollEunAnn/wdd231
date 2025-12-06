@@ -80,9 +80,8 @@ function displaySkills(skills) {
 const music = document.getElementById("bgMusic");
 const toggle = document.getElementById("musicToggle");
 
-// Load saved volume or default to 40%
-const savedVolume = localStorage.getItem("musicVolume");
-music.volume = savedVolume !== null ? savedVolume : 0.2;
+// default to 20% to save ears
+music.volume = 0.2;
 
 // Load saved play state
 const savedState = localStorage.getItem("musicPlaying");
