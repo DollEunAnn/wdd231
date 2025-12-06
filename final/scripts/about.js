@@ -61,12 +61,16 @@ function displaySkills(skills) {
         const title = document.createElement('h3');
         const description = document.createElement('p');
         const tools = document.createElement('p');
+        const level = document.createElement('p');
 
         title.textContent = `${skill.name} `;
         description.textContent = `${skill.type}`;
         tools.textContent = `${skill.tools.join(', ')}`;
 
-        details.append(title, description, tools);
+        level.textContent = `(${skill.level}) `;
+        level.className = 'sub-details';
+
+        details.append(title, description, tools, level);
 
         skillContainer.append(details);
     });

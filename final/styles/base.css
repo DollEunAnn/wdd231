@@ -382,6 +382,10 @@ footer a:hover {
     color: var(--accent);
 }
 
+.sub-details {
+    color:var(--accent);
+}
+
 /* aboutHeader */
 #aboutHeaderImage {
     margin-bottom: 3rem;
